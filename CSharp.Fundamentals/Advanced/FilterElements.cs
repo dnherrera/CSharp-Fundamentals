@@ -23,6 +23,9 @@ namespace CSharp.Fundamentals.Advanced
             The word seven is shorter than its value.
             The word eight is shorter than its value.
             */
+          
+            Console.WriteLine("------------------------------------------------------------");
+
 
             int[] vectorA = { 0, 2, 4, 5, 6 };
             int[] vectorB = { 1, 3, 5, 7, 8 };
@@ -32,6 +35,33 @@ namespace CSharp.Fundamentals.Advanced
             foreach (var item in dotProduct)
             {
                 Console.WriteLine($"Dot product: {item}");
+            }
+
+
+            Console.WriteLine("------------------------------------------------------------");
+
+            int[] numbers = { 5, 2, 1, 3, 9, 8, 6, 7, 2, 0 };
+            string[] strings = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+
+            var textNums = from n in numbers
+                           select strings[n];
+
+            Console.WriteLine("Number strings:");
+            foreach (var s in textNums)
+            {
+                Console.WriteLine(s);
+            }
+
+            Console.WriteLine("------------------------------------------------------------");
+
+            int[] nums = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+
+            var numsInPlace = nums.Select((num, index) => (Num: num, InPlace: (num == index)));
+
+            Console.WriteLine("Number: In-place?");
+            foreach (var n in numsInPlace)
+            {
+                Console.WriteLine($"{n.Num}: {n.InPlace}");
             }
         }
     }
