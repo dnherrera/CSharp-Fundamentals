@@ -23,8 +23,9 @@ namespace CSharp.Fundamentals.Advanced
             The word seven is shorter than its value.
             The word eight is shorter than its value.
             */
-
+          
             Console.WriteLine("------------------------------------------------------------");
+
 
             int[] vectorA = { 0, 2, 4, 5, 6 };
             int[] vectorB = { 1, 3, 5, 7, 8 };
@@ -35,6 +36,7 @@ namespace CSharp.Fundamentals.Advanced
             {
                 Console.WriteLine($"Dot product: {item}");
             }
+
 
             Console.WriteLine("------------------------------------------------------------");
 

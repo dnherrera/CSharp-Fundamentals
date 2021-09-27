@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>CSharp.Fundamentals.Basics.DataTypes</StartupObject>
+    <StartupObject>CSharp.Fundamentals.Advanced.FilterElements</StartupObject>
   </PropertyGroup>
 
 </Project>
