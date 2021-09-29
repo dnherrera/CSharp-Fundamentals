@@ -23,7 +23,7 @@ namespace CSharp.Fundamentals.Advanced
             The word seven is shorter than its value.
             The word eight is shorter than its value.
             */
-          
+
             Console.WriteLine("------------------------------------------------------------");
 
 
@@ -36,7 +36,6 @@ namespace CSharp.Fundamentals.Advanced
             {
                 Console.WriteLine($"Dot product: {item}");
             }
-
 
             Console.WriteLine("------------------------------------------------------------");
 
