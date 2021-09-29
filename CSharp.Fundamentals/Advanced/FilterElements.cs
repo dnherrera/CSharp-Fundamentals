@@ -26,6 +26,7 @@ namespace CSharp.Fundamentals.Advanced
 
             Console.WriteLine("------------------------------------------------------------");
 
+
             int[] vectorA = { 0, 2, 4, 5, 6 };
             int[] vectorB = { 1, 3, 5, 7, 8 };
 
