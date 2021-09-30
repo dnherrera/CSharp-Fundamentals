@@ -15,6 +15,7 @@
 */
 
 using System;
+using System.Linq;
 
 namespace CSharp.Fundamentals.Algorithms
 {
@@ -28,9 +29,13 @@ namespace CSharp.Fundamentals.Algorithms
             var ar_temp = Console.ReadLine().Split(' ');
             var ar = Array.ConvertAll(ar_temp, long.Parse);
 
+            // LINQ
+            // finalSum = ar.Sum(x => x);
+
+            // For Loop
             for (int i = 0; i < n; i++)
                 finalSum = finalSum + ar[i];
-                //finalSum += ar[i];
+                // finalSum += ar[i];
 
             Console.WriteLine(finalSum);
         }
