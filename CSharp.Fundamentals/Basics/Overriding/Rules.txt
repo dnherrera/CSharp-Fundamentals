@@ -1,0 +1,14 @@
+﻿The method signature of a derived class should be the same as a base class.
+Overriding is not possible in the same class.
+Access modifiers must be the same for virtual methods and override methods.
+The virtual keyword is used in the base class method and Override is used in a derived class method.
+The base class method should not be static.
+
+
+Overriding in C# is the re-implementation of a base class method in a derived class. In this, the base class method is overridden in child class. 
+The derived class method has the same name and signature as base class method. 
+Overriding is useful in achieving Runtime polymorphism.
+
+Overriding is useful in runtime polymorphism. It allows derived class to implement a base class method in its own way. 
+So the method implementation is different of derived class from its base class. 
+The overridden method can be virtual, override or abstract.

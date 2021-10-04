@@ -24,7 +24,7 @@ namespace CSharp.Fundamentals.Basics.Overriding
     /// <summary>
     /// Implementation of Overriding without Virtual or Override Keywords
     /// </summary>
-    public class OverridingWithoutKeywords // Main Program
+    public class WithoutKeywords // Main Program
     {
         public static void Main(string[] args)
         {
