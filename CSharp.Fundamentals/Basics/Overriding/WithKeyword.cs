@@ -5,7 +5,7 @@ namespace CSharp.Fundamentals.Basics.Overriding
     /// <summary>
     /// Implementationg of Overriding with Keywords
     /// </summary>
-    public class OverridingWithKeyword // Main Program
+    public class WithKeyword // Main Program
     {
         public static void Main(string[] args)
         {

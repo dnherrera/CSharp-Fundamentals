@@ -2,7 +2,7 @@
 
 namespace CSharp.Fundamentals.Basics.Overriding
 {
-    public class OverridingUsingAbstractKeyword // Main Class
+    public class UsingAbstractKeyword // Main Class
     {
         public static void Main(string[] args) // Main Method
         {
