@@ -1,0 +1,14 @@
+﻿1. The method signature must be different. Either the number of arguments, type of arguments, or order of arguments must be different.
+2. The return type of the methods does not play any role in method overloading.
+3. Optional Parameters take precedence over Implicit type conversion when deciding which method definition to bind.
+4. Implicit type conversion takes precedence over the parent class method.
+
+
+Method Overloading is the compile-time implementation of the concept of Polymorphism. Developers can define similar methods by the same name, 
+differing in either the number of arguments, order of arguments, or type of arguments. 
+In the example of fruits, you need not define separate methods for each fruit (eatApple, eat the banana, etc.). 
+You can use the same name to eat fruit and pass different parameters to it. The compiler would automatically call the appropriate method.
+
+Method overloading is a fairly powerful concept. It is very helpful in writing elegant code.
+Yet, it can go to an extent when tens of methods are overloaded, and the developer has to refer the method definitions while debugging the erroneous calls. 
+To avoid this, it is often suggested to name your methods differently when overloading tends to scale to a higher level.
