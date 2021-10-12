@@ -5,7 +5,7 @@ namespace CSharp.Fundamentals.Algorithms
     /// <summary>
     /// Write a C# Sharp program to get the absolute difference between n and 51. If n is greater than 51 return triple the absolute difference.
     /// </summary>
-    public class BasicAlgo_AbsDifference
+    public class BasicAlgo_0002_AbsDifference
     {
         public static void Main(string[] args)
         {
