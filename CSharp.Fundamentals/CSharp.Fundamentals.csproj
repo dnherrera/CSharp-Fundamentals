@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>CSharp.Fundamentals.Basics.Overriding.BirdWithKeyword</StartupObject>
+    <StartupObject>CSharp.Fundamentals.Algorithms.BasicAlgo_Addition</StartupObject>
   </PropertyGroup>
 
 </Project>
