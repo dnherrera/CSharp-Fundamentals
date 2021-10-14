@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CSharp.Fundamentals.Algorithms
 {
@@ -10,10 +11,18 @@ namespace CSharp.Fundamentals.Algorithms
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine(SumFunc(1, 2));
-            Console.WriteLine(SumFunc(1, 3));
-            Console.WriteLine(SumFunc(2, 2));
-            Console.ReadLine();
+            IDictionary<int, int> testData = new Dictionary<int, int> 
+            {
+                { 1, 2 },
+                { 2, 3 },
+                { 3, 3 }
+            };
+
+            foreach (var item in testData)
+            {
+                Console.WriteLine(SumFunc(item.Key, item.Value));
+            }
+            
         }
 
         public static int SumFunc(int x, int y)
