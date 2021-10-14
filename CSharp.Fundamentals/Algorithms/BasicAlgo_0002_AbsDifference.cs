@@ -9,9 +9,12 @@ namespace CSharp.Fundamentals.Algorithms
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine(ComputeAbsDifference(53));
-            Console.WriteLine(ComputeAbsDifference(30));
-            Console.WriteLine(ComputeAbsDifference(51));
+            int[] testData = { 53, 30, 51 };
+
+            foreach (var item in testData)
+            {
+                Console.WriteLine(ComputeAbsDifference(item));
+            }
         }
 
         public static int ComputeAbsDifference(int x)

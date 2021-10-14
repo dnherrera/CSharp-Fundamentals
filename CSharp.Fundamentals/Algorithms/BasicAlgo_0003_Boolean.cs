@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CSharp.Fundamentals.Algorithms
 {
@@ -9,10 +10,12 @@ namespace CSharp.Fundamentals.Algorithms
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine(IsEqualsToThirty(30, 0) + " Should be TRUE");
-            Console.WriteLine(IsEqualsToThirty(25, 5) + " Should be TRUE");
-            Console.WriteLine(IsEqualsToThirty(20, 30) + " Should be TRUE");
-            Console.WriteLine(IsEqualsToThirty(20, 25) + " Should be FALSE");
+            IDictionary<int, int> testData = new Dictionary<int, int>() { { 30, 0 }, { 25, 5 }, { 20, 30 }, { 35, 25} };
+
+            foreach (var item in testData)
+            {
+                Console.WriteLine(IsEqualsToThirty(item.Key, item.Value));
+            }
         }
 
         public static bool IsEqualsToThirty(int x, int y)
