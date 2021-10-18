@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>CSharp.Fundamentals.Algorithms.BasicAlgo_0010</StartupObject>
+    <StartupObject>CSharp.Fundamentals.Algorithms.BasicAlgo_0011</StartupObject>
   </PropertyGroup>
 
 </Project>
