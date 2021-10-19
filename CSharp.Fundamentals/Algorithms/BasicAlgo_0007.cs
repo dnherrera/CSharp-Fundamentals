@@ -30,8 +30,17 @@ namespace CSharp.Fundamentals.Algorithms
 
         public static string ReverseStringSecondMethod(string str)
         {
-            return str.Length > 1
-                ? str.Substring(str.Length - 1) + str.Substring(1, str.Length - 2) + str.Substring(0, 1) : str;
+            string revstr = ""; // var to store the reverse string
+            
+            var length = str.Length - 1; // Get the index of last character         
+
+            while (length >= 0)                
+            {
+                revstr = revstr + str[length];  // reverse a string based on the length
+                length--;
+            }
+
+            return revstr;
         }
     }
 }

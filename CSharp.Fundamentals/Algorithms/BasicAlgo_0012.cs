@@ -21,7 +21,7 @@ namespace CSharp.Fundamentals.Algorithms
             return request.StartsWith("C#");
         }
 
-        public static bool test(string str)
+        public static bool IsStartsWithCSharp2(string str)
         {
             return (str.Length < 3 && str.Equals("C#")) || (str.StartsWith("C#") && str[2] == ' ');
         }

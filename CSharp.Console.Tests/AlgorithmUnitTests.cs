@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using CSharp.Fundamentals.Algorithms;
 using NUnit.Framework;
 
@@ -121,10 +122,10 @@ namespace CSharp.Console.Tests
 
             // Act
             BasicAlgo_0005.Main(new string[] { });
-            var result = BasicAlgo_0005.StringIfChecker(request);
+            var actualResult = BasicAlgo_0005.StringIfChecker(request);
 
             // Assert
-            Assert.AreEqual(expectedResult, result);
+            Assert.AreEqual(expectedResult, actualResult);
         }
 
         [Test]
@@ -139,10 +140,136 @@ namespace CSharp.Console.Tests
 
             // Act
             BasicAlgo_0006.Main(new string[] { });
-            var result = BasicAlgo_0006.CharacterRemover(requestString, startIndex);
+            var actualResult = BasicAlgo_0006.CharacterRemover(requestString, startIndex);
 
             // Assert
-            Assert.AreEqual(expectedResult, result);
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        [TestCase("Dondon")]
+        [TestCase("a")]
+        [TestCase("Canada")]
+        public void BasicAlgo_0007_ReverseString(string requestString)
+        {
+            //Arrange
+            char[] convertedToChar = requestString.ToCharArray();
+            Array.Reverse(convertedToChar);
+            var expectedResult = String.Join("", convertedToChar.Select(x => x.ToString()).ToArray());
+
+            // Act
+            BasicAlgo_0007.Main(new string[] { });
+            var actualResult = BasicAlgo_0007.ReverseString(requestString);
+            var actualResult2 = BasicAlgo_0007.ReverseStringSecondMethod(requestString);
+
+            // Assert
+            Assert.AreEqual(convertedToChar, actualResult);
+            Assert.AreEqual(expectedResult, String.Join("", actualResult.Select(x => x.ToString()).ToArray()));
+            Assert.AreEqual(expectedResult, actualResult2);
+        }
+
+        [Test]
+        [TestCase("C Sharp")]
+        [TestCase("JS")]
+        [TestCase("b")]
+        public void BasicAlgo_0008_CreateFourCopies(string requestString)
+        {
+            // Arrange
+            var expectedResult = requestString.Length < 2 ? requestString : requestString.Substring(0, 2) + requestString.Substring(0, 2) + requestString.Substring(0, 2) + requestString.Substring(0, 2);
+
+            // Act
+            BasicAlgo_0008.Main(new string[] { });
+            var actualResult = BasicAlgo_0008.CreateFourCopies(requestString);
+
+            // Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        [TestCase("C Sharp")]
+        [TestCase("JS")]
+        [TestCase("b")]
+        public void BasicAlgo_0009_AddLastCharacterToFirstAndLast(string request)
+        {
+            // Arrange
+            var lastChar = request.Substring(request.Length - 1);
+            var expectedResult = $"{lastChar}{request}{lastChar}";
+
+            // Act
+            BasicAlgo_0009.Main(new string[] { });
+            var actualResult = BasicAlgo_0009.AddLastCharToFirstAndLast(request);
+
+            // Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        [TestCase(3)]
+        [TestCase(14)]
+        [TestCase(12)]
+        [TestCase(37)]
+        public void BasicAlgo_0010_IsMultipleByThreeOrSeven(int request)
+        {
+            // Arrange
+            var expectedResult = request % 3 == 0 || request % 7 == 0;
+
+            // Act
+            BasicAlgo_0010.Main(new string[] { });
+            var actualResult = BasicAlgo_0010.IsMultipleByThreeOrSeven(request);
+
+            // Assert
+            if (expectedResult)
+            {
+                Assert.AreEqual(true, actualResult);
+            }
+            else
+            {
+                Assert.AreEqual(false, actualResult);
+            }
+        }
+
+        [Test]
+        [TestCase("Python")]
+        [TestCase("JS")]
+        [TestCase("Code")]
+        public void BasicAlgo_0011_AddFirstThreeCharacterToFrontAndBack(string request)
+        {
+            // Arrange
+            var expectedResult = request.Length < 3 ? $"{request}{request}{request}" : $"{request.Substring(0, 3)}{request}{request.Substring(0, 3)}"; ;
+
+            // Act
+            BasicAlgo_0011.Main(new string[] { });
+            var actualResult = BasicAlgo_0011.AddFirstThreeCharacterToFrontAndBack(request);
+
+            // Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        [TestCase("C#")]
+        [TestCase("CSS")]
+        [TestCase("C S")]
+        public void BasicAlgo_0012_IsStartsWithCSharp(string request)
+        {
+            // Arrange
+            var expectedResult = request.StartsWith("C#");
+
+            // Act
+            BasicAlgo_0012.Main(new string[] { });
+            var actualResult = BasicAlgo_0012.IsStartsWithCSharp(request);
+            var actualResult2 = BasicAlgo_0012.IsStartsWithCSharp2(request);
+
+            // Assert
+            if (expectedResult)
+            {
+                Assert.AreEqual(true, actualResult);
+                Assert.AreEqual(true, actualResult2);
+            }
+            else
+            {
+                Assert.AreEqual(false, actualResult);
+                Assert.AreEqual(false, actualResult2);
+            }
         }
     }
 }

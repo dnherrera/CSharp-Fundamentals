@@ -13,11 +13,11 @@ namespace CSharp.Fundamentals.Algorithms
             string[] testData = { "C Sharp", "JS", "b" };
             foreach (var item in testData)
             {
-                Console.WriteLine(CreateNewString(item));
+                Console.WriteLine(CreateFourCopies(item));
             }
         }
 
-        public static string CreateNewString(string request)
+        public static string CreateFourCopies(string request)
         {
             return request.Length < 2 ? request : request.Substring(0, 2) + request.Substring(0, 2) + request.Substring(0, 2) + request.Substring(0, 2);
         }
