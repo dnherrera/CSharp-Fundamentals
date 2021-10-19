@@ -1,16 +1,61 @@
 using System;
+using System.IO;
 using System.Linq;
 using CSharp.Fundamentals.Algorithms;
 using NUnit.Framework;
 
 namespace CSharp.Console.Tests
 {
+    [TestFixture]
     public class AlgorithmUnitTests
     {
         [SetUp]
         public void Setup()
         {
         }
+
+        [Test]
+        [TestCase(1000000001, 1000000002, 1000000003, 1000000004, 1000000005)]
+        public void HackerRank_aVeryBigSum(params long[] x)
+        {
+            //Arrange
+            var expectedResult = 5000000015;
+            var count = 5;
+            
+            /* To mock the console readline.
+            var output = new StringWriter();
+            System.Console.SetOut(output);
+
+            var input = new StringReader("1");
+            System.Console.SetIn(input);
+            */
+
+            // Act
+            HackerRank_AVeryBigSum.Main(new string[] { });
+            var actualResult = HackerRank_AVeryBigSum.SumBigValuesUsingLinq(x);
+            var actualResult2 = HackerRank_AVeryBigSum.SumBigValuesUsingForLoop(x, count);
+
+            // Assert
+            Assert.AreEqual(expectedResult, actualResult);
+            Assert.AreEqual(expectedResult, actualResult2);
+        }
+
+        [Test]
+        [TestCase(3, 2, 1, 3, 3)]
+        public void HackerRank_CountTallestCandles(params int[] x)
+        {
+            //Arrange
+            var expectedResult = 3;
+
+            // Act
+            //TODO: Need to investigate
+            HackerRank_BirthdayCakeCandles.Main(new string[] { });
+            var actualResult = HackerRank_BirthdayCakeCandles.CountTallestCandles(x);
+
+            // Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
 
         [Test]
         [TestCase(1, 2)]

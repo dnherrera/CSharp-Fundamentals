@@ -21,23 +21,35 @@ namespace CSharp.Fundamentals.Algorithms
 {
     public class HackerRank_AVeryBigSum
     {
-        static void Main(String[] args)
+        public static void Main(string[] args)
         {
-            var finalSum = 0L;
-            var n = int.Parse(Console.ReadLine());
-
+            /* To make the input data as dynamic
+            var count = int.Parse(Console.ReadLine());
             var ar_temp = Console.ReadLine().Split(' ');
             var ar = Array.ConvertAll(ar_temp, long.Parse);
+            */
 
-            // LINQ
-            // finalSum = ar.Sum(x => x);
-
-            // For Loop
-            for (int i = 0; i < n; i++)
-                finalSum = finalSum + ar[i];
-                // finalSum += ar[i];
-
-            Console.WriteLine(finalSum);
+            var testData = new string[] { "1000000001", "1000000002", "1000000003", "1000000004", "1000000005" };
+            var ar = testData.Select(x => long.Parse(x)).ToArray();
+            Console.WriteLine(SumBigValuesUsingLinq(ar));
         }
+
+        public static long SumBigValuesUsingLinq(long[] number)
+        {
+            var finalSum = 0L;
+            finalSum = number.Sum(x => x);
+            return finalSum;
+        }
+
+        public static long SumBigValuesUsingForLoop(long[] number, int count)
+        {
+            var finalSum = 0L;
+
+            for (int i = 0; i < count; i++)
+                finalSum += number[i];
+
+            return finalSum;
+        }
+
     }
 }

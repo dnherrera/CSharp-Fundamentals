@@ -21,33 +21,40 @@ using System;
 
 namespace CSharp.Fundamentals.Algorithms
 {
-    class HackerRank_BirthdayCakeCandles
+    public class HackerRank_BirthdayCakeCandles
     {
-        static void Main(String[] args)
+        public static void Main(String[] args)
         {
-            //No need to capture the size of array. I use array's length property instead.
+            /* To make dynamic request 
             Console.ReadLine();
             var height_temp = Console.ReadLine().Split(' ');
-
             var height = Array.ConvertAll(height_temp, int.Parse);
+            */
 
-            var maxValue = height[0];
+            int[] testData = { 3, 4, 1, 3 };
+            Console.WriteLine(CountTallestCandles(testData));
+        }
+
+        public static int CountTallestCandles(int[] candleHeights)
+        {
+            var maxValue = candleHeights[0];
             var maxValueOccurence = 1;
 
-            for (int i = 1; i < height.Length; i++)
+            for (int i = 1; i < candleHeights.Length; i++)
             {
-                if (height[i] == maxValue)
+                if (candleHeights[i] == maxValue)
                 {
                     maxValueOccurence++;
                     continue;
                 }
-                if (height[i] > maxValue)
+                if (candleHeights[i] > maxValue)
                 {
-                    maxValue = height[i];
+                    maxValue = candleHeights[i];
                     maxValueOccurence = 1;
                 }
             }
-            Console.WriteLine(maxValueOccurence);
+
+            return maxValueOccurence;
         }
     }
 }

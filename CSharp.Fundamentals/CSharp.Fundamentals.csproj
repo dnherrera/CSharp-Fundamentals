@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>CSharp.Fundamentals.Basics.Swap</StartupObject>
+    <StartupObject>CSharp.Fundamentals.Algorithms.HackerRank_BirthdayCakeCandles</StartupObject>
   </PropertyGroup>
 
 </Project>
