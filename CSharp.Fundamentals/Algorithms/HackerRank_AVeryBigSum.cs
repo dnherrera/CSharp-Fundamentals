@@ -19,7 +19,7 @@ using System.Linq;
 
 namespace CSharp.Fundamentals.Algorithms
 {
-    public class AVeryBigSum
+    public class HackerRank_AVeryBigSum
     {
         static void Main(String[] args)
         {

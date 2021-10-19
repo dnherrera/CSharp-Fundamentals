@@ -7,7 +7,7 @@ namespace CSharp.Fundamentals.Algorithms
     /// </summary>
     public class BasicAlgo_0012
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string[] testData = { "C# Sharp", "C#", "C++" };
             foreach (var item in testData)
@@ -16,12 +16,12 @@ namespace CSharp.Fundamentals.Algorithms
             }
         }
 
-        static bool IsStartsWithCSharp(string request)
+        public static bool IsStartsWithCSharp(string request)
         {
             return request.StartsWith("C#");
         }
 
-        public static bool test(string str)
+        public static bool IsStartsWithCSharp2(string str)
         {
             return (str.Length < 3 && str.Equals("C#")) || (str.StartsWith("C#") && str[2] == ' ');
         }

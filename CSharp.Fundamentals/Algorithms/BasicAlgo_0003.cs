@@ -6,7 +6,7 @@ namespace CSharp.Fundamentals.Algorithms
     /// <summary>
     /// Write a C# Sharp program to check two given integers, and return true if one of them is 30 or if their sum is 30
     /// </summary>
-    public class BasicAlgo_0003_Boolean
+    public class BasicAlgo_0003
     {
         public static void Main(string[] args)
         {

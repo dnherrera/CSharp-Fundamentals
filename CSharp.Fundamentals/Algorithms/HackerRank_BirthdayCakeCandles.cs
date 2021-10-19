@@ -21,7 +21,7 @@ using System;
 
 namespace CSharp.Fundamentals.Algorithms
 {
-    class BirthdayCakeCandles
+    class HackerRank_BirthdayCakeCandles
     {
         static void Main(String[] args)
         {

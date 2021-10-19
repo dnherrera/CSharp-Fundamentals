@@ -8,16 +8,16 @@ namespace CSharp.Fundamentals.Algorithms
     /// </summary>
     public class BasicAlgo_0008
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string[] testData = { "C Sharp", "JS", "b" };
             foreach (var item in testData)
             {
-                Console.WriteLine(CreateNewString(item));
+                Console.WriteLine(CreateFourCopies(item));
             }
         }
 
-        public static string CreateNewString(string request)
+        public static string CreateFourCopies(string request)
         {
             return request.Length < 2 ? request : request.Substring(0, 2) + request.Substring(0, 2) + request.Substring(0, 2) + request.Substring(0, 2);
         }

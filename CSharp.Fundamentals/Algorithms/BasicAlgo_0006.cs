@@ -8,7 +8,7 @@ namespace CSharp.Fundamentals.Algorithms
     /// </summary>
     public class BasicAlgo_0006
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             IDictionary<string, int> testData = new Dictionary<string, int>()
             {
@@ -19,11 +19,11 @@ namespace CSharp.Fundamentals.Algorithms
 
             foreach (var item in testData)
             {
-                Console.WriteLine(StringTrimmer(item.Key, item.Value));
+                Console.WriteLine(CharacterRemover(item.Key, item.Value));
             }
         }
 
-        static string StringTrimmer(string request, int startIndex)
+        public static string CharacterRemover(string request, int startIndex)
         {
             var numberOfCharTobeDeleted = 1;
             var test = request.Remove(startIndex, numberOfCharTobeDeleted);

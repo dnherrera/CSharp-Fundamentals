@@ -16,7 +16,7 @@ namespace CSharp.Fundamentals.Algorithms
             }
         }
 
-        static bool CheckWithin100(int number)
+        public static bool CheckWithin100(int number)
         {
             if (Math.Abs(number - 100) <= 10 || Math.Abs(number - 200) <= 10)
             {
