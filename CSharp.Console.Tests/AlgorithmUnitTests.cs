@@ -16,14 +16,22 @@ namespace CSharp.Console.Tests
         [TestCase(3, 3)]
         public void BasicAlgo_0001(int x, int y)
         {
+            //Arrange
+            var expectedResultSameRequest = (x + y) * 3;
+            var expectedResultDiffRequest = x + y;
+
+            // Act
+            BasicAlgo_0001_Addition.Main(new string[] { });
             var result = BasicAlgo_0001_Addition.SumFunc(x, y);
+
+            // Assert
             if (x == y)
             {
-                Assert.AreEqual((x + y) * 3, result);
+                Assert.AreEqual(expectedResultSameRequest, result);
             }
             else
             {
-                Assert.AreEqual(x + y, result);
+                Assert.AreEqual(expectedResultDiffRequest, result);
             }
         }
     }
