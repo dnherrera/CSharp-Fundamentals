@@ -8,7 +8,7 @@ namespace CSharp.Fundamentals.Algorithms
     /// </summary>
     public class BasicAlgo_0011
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string[] testData = { "Python", "JS", "Code" };
             foreach (var item in testData)
@@ -17,7 +17,7 @@ namespace CSharp.Fundamentals.Algorithms
             }
         }
 
-        static string AddFirstThreeCharacterToFrontAndBack(string request)
+        public static string AddFirstThreeCharacterToFrontAndBack(string request)
         {
             return request.Length < 3 ? $"{request}{request}{request}" : $"{request.Substring(0, 3)}{request}{request.Substring(0, 3)}";
         }

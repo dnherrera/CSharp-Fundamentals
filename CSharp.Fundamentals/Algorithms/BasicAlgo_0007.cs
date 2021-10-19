@@ -8,7 +8,7 @@ namespace CSharp.Fundamentals.Algorithms
     /// </summary>
     public class BasicAlgo_0007
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string[] testData = { "abc", "a", "xyz" };
 

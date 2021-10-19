@@ -8,7 +8,7 @@ namespace CSharp.Fundamentals.Algorithms
     /// </summary>
     public class BasicAlgo_0009
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string[] testData = { "Red", "Green", "1" };
             foreach (var item in testData)
@@ -17,7 +17,7 @@ namespace CSharp.Fundamentals.Algorithms
             }
         }
 
-        static string AddLastCharToFirstAndLast(string request)
+        public static string AddLastCharToFirstAndLast(string request)
         {
             var lastChar = request.Substring(request.Length - 1);
             return $"{lastChar}{request}{lastChar}";

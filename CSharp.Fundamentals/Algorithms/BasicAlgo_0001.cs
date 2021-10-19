@@ -7,7 +7,7 @@ namespace CSharp.Fundamentals.Algorithms
     /// Write a C# Sharp program to compute the sum of the two given integer values. 
     /// If the two values are the same, then return triple their sum.
     /// </summary>
-    public class BasicAlgo_0001_Addition
+    public class BasicAlgo_0001
     {
         public static void Main(string[] args)
         {
@@ -20,12 +20,12 @@ namespace CSharp.Fundamentals.Algorithms
 
             foreach (var item in testData)
             {
-                Console.WriteLine(SumFunc(item.Key, item.Value));
+                Console.WriteLine(SumTwoIntegers(item.Key, item.Value));
             }
             
         }
 
-        public static int SumFunc(int x, int y)
+        public static int SumTwoIntegers(int x, int y)
         {
             return x == y ? (x + y) * 3 : x + y;
         }

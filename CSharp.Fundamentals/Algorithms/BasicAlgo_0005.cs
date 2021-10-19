@@ -8,17 +8,17 @@ namespace CSharp.Fundamentals.Algorithms
     /// </summary>
     public class BasicAlgo_0005
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string[] testData = { "if else", "else" };
 
             for (int i = 0; i < testData.Length; i++)
             {
-                Console.WriteLine(StringChecker(testData[i]));
+                Console.WriteLine(StringIfChecker(testData[i]));
             }
         }
 
-        static string StringChecker(string oldString)
+        public static string StringIfChecker(string oldString)
         {
             if (oldString.StartsWith("if"))
                 return oldString;

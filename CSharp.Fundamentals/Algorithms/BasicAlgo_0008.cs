@@ -8,7 +8,7 @@ namespace CSharp.Fundamentals.Algorithms
     /// </summary>
     public class BasicAlgo_0008
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string[] testData = { "C Sharp", "JS", "b" };
             foreach (var item in testData)

@@ -7,7 +7,7 @@ namespace CSharp.Fundamentals.Algorithms
     /// </summary>
     public class BasicAlgo_0010
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             int[] testData = { 3, 14, 12, 37 };
             foreach (var item in testData)
@@ -16,7 +16,7 @@ namespace CSharp.Fundamentals.Algorithms
             }
         }
 
-        static bool IsMultipleByThreeOrSeven(int request)
+        public static bool IsMultipleByThreeOrSeven(int request)
         {
             return request % 3 == 0 || request % 7 == 0;
         }
