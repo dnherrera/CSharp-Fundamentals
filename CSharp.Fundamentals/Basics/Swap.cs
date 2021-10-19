@@ -14,6 +14,12 @@ namespace CSharp.Fundamentals.Basics
 
             Console.WriteLine($"The Value of A is {a}");
             Console.WriteLine($"The value of B is {b}");
+
+            int x = 10, y = 90;
+            var xy = (x, y) = (y, x);
+
+            Console.WriteLine($"The value of x now is : {xy.x}");
+            Console.WriteLine($"The value of y now is : {xy.y}");
         }
     }
 }
