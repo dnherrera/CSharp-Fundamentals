@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CSharp.Fundamentals.Basics.Overloading
+namespace CSharp.Fundamentals.Overloading
 {
     /// <summary>
     /// When the number and type of arguments are the same, but the order in which they are passed differs.

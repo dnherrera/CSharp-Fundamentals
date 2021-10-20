@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CSharp.Fundamentals.Basics.Overloading
+namespace CSharp.Fundamentals.Overloading
 {
     /// <summary>
     /// When we define an optional parameter in the method signature, the compiler treats it as method overloading.

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CSharp.Fundamentals.Basics.Overloading
+namespace CSharp.Fundamentals.Overloading
 {
     /// <summary>
     /// C# has another feature of passing in the name of the arguments while calling the method. 

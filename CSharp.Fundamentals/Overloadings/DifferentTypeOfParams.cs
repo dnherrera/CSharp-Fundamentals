@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CSharp.Fundamentals.Basics.Overloading
+namespace CSharp.Fundamentals.Overloading
 {
     /// <summary>
     /// In the example below, both methods expect a single argument. So, based on the type of the argument passed during the method call,
