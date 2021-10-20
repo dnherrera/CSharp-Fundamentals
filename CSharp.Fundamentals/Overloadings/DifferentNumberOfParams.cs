@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CSharp.Fundamentals.Basics.Overloading
+namespace CSharp.Fundamentals.Overloading
 {
     /// <summary>
     /// The first and the simplest category of method overloading is when the methods have a different number of parameters in their signatures.

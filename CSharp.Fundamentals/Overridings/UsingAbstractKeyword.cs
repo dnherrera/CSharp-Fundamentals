@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CSharp.Fundamentals.Basics.Overriding
+namespace CSharp.Fundamentals.Overriding
 {
     public class UsingAbstractKeyword // Main Class
     {

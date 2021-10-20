@@ -8,35 +8,51 @@ namespace CSharp.Fundamentals.Basics
     {
         static void Main(string[] args)
         {
-            var students = Student.GetStudents().Where(x => x.Gender == Genders.Male.ToString()).ToList();
-            IEnumerable<Student> studentEnumerable = students.Where(x => x.StudentName == "Dondon");
+            var students = GetStudents();
+            GetStudentsEnumerable(students);
 
-            IQueryable<Student> studentQueryable = students.AsQueryable().Where(x => x.Gender == "Male");
+            var studentQueryable = GetStudentsQueryable(students);
             studentQueryable = studentQueryable.Take(1);
 
-            students.ForEach(x =>
-            {
-                Console.WriteLine(x.StudentName + " " + x.Gender);
-            });
+            // Displaying data using For Each
+            students.ForEach(x => { Console.WriteLine(x.StudentName + " " + x.Gender); });
 
+            // Displaying data using LINQ
             Console.WriteLine(string.Join(", ", students.Select(s => s.StudentName.ToString())));
 
-            List<int> itemNums = new List<int>()
-            {
-                1,2,3,4,5,6,7,8,9,10
-            };
 
-            IEnumerable<int> querySyntax = itemNums.Where(x => x > 5);
-            Console.WriteLine(string.Join(",", querySyntax));
+            List<int> testData = new List<int>() { 1,2,3,4,5,6,7,8,9,10 };
+            Console.WriteLine(GetGreaterThanFive(testData)); 
 
-            //Unique Items
-            int[] numbers = { 1, 2, 2, 3, 4, 6, 7, 8, 9, 10 };
-            IEnumerable<int> uniqueNumbers = numbers.Distinct<int>();
-            Console.WriteLine("Unique numbers : " + string.Join(",", uniqueNumbers));
+            dynamic[] items = { "Dondon", "Jane", "Doe", "Jane", 1, 1, 2, 2, 3, 4, 6, 7, 8, 9, 10 };
+            Console.WriteLine(GetUniqueItem(items));
+        }
 
-            string[] names = { "Dondon", "Jane", "Doe", "Jane" };
-            IEnumerable<string> uniqnames = names.Distinct<string>();
-            Console.WriteLine("Unique names : " + string.Join(", ", uniqnames));
+        public static List<Student> GetStudents()
+        {
+            return Student.GetStudents().Where(x => x.Gender == Genders.Male.ToString()).ToList();
+        }
+
+        public static IEnumerable<Student> GetStudentsEnumerable(List<Student> students)
+        {
+            return students.Where(x => x.StudentName == "Dondon");
+        }
+
+        public static IQueryable<Student> GetStudentsQueryable(List<Student> students)
+        {
+            return students.AsQueryable().Where(x => x.Gender == "Male");
+        }
+
+        public static string GetGreaterThanFive(List<int> numbers)
+        {
+            IEnumerable<int> querySyntax = numbers.Where(x => x > 5);
+            return string.Join(",", querySyntax);
+        }
+
+        public static string GetUniqueItem(dynamic[] items)
+        {
+            var uniqueItem = items.Distinct();
+            return "Unique items : " + string.Join(", ", uniqueItem);
         }
     }
 

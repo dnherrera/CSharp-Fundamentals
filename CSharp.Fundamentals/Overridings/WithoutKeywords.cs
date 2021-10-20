@@ -19,7 +19,7 @@
 
 using System;
 
-namespace CSharp.Fundamentals.Basics.Overriding
+namespace CSharp.Fundamentals.Overriding
 {
     /// <summary>
     /// Implementation of Overriding without Virtual or Override Keywords

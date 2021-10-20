@@ -31,24 +31,20 @@ namespace CSharp.Fundamentals.Basics
 {
     public class DataTypes
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            // Displaying double quotes in c#
-            string Name = "\"Dotnettutorials\"";
-            Console.WriteLine(Name);
+            string[] testData = new string[]
+            {
+                "\"Dotnettutorials\"",                      // Displaying double quotes
+                "One\nTwo\nThree",                          // New Line
+                "C:\\Dondon\\Dotnettutorials\\Csharp"       // Verbatim Literals
+            };
 
-            // Displaying new line character in c#
-            Name = "One\nTwo\nThree";
-            Console.WriteLine(Name);
-
-            // Displaying new line character in c#
-            Name = "c:\\Pranaya\\Dotnettutorials\\Csharp";
-            Console.WriteLine(Name);
-
-            // C# verbatim literal
-            Name = @"c:\Pranaya\Dotnettutorials\Csharp";
-            Console.WriteLine(Name);
-            Console.ReadKey();
+            foreach (var item in testData)
+            {
+                Console.WriteLine(item);
+                Console.ReadKey();
+            }
         }
     }
 }
