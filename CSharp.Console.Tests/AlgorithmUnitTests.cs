@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using CSharp.Fundamentals.Algorithms;
 using NUnit.Framework;
@@ -345,6 +346,28 @@ namespace CSharp.Console.Tests
             // Act
             BasicAlgo_0014.Main(new string[] { });
             var actualResult = BasicAlgo_0014.RangeChecker(x, y);
+
+            // Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public void BasicAlgo_0015_RangeChecker()
+        {
+            //Arrange
+            var request = new List<int[]>
+            {
+                new int[] { 11, 20, 12 },
+                new int[] { 30, 30, 17 },
+                new int[] { 25, 35, 50 },
+                new int[] { 15, 12, 8 }
+            };
+
+            IEnumerable<bool> expectedResult = new List<bool>() { true, true, true, false };
+
+            // Act
+            BasicAlgo_0015.Main(new string[] { });
+            var actualResult = BasicAlgo_0015.RangeChecker(request);
 
             // Assert
             Assert.AreEqual(expectedResult, actualResult);
