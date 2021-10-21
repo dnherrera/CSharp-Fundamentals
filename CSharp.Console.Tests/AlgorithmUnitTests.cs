@@ -315,5 +315,22 @@ namespace CSharp.Console.Tests
                 Assert.AreEqual(false, actualResult2);
             }
         }
+
+        [Test]
+        [TestCase(120, -1)]
+        [TestCase(-1, 120)]
+        [TestCase(2, 121)]
+        public void BasicAlgo_0013_CheckTemperatue(int x, int y)
+        {
+            //Arrange
+            var expectedResult = (x < 0 || x > 100) && (y < 0 || y > 100);
+
+            // Act
+            BasicAlgo_0013.Main(new string[] { });
+            var actualResult = BasicAlgo_0013.IsLessThanZeroAndGreaterThanHundred(x, y);
+
+            // Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
     }
 }
