@@ -332,5 +332,22 @@ namespace CSharp.Console.Tests
             // Assert
             Assert.AreEqual(expectedResult, actualResult);
         }
+
+        [Test]
+        [TestCase(100, 199)]
+        [TestCase(250, 300)]
+        [TestCase(105, 190)]
+        public void BasicAlgo_0014_RangeChecker(int x, int y)
+        {
+            //Arrange
+            var expectedResult = (x >= 100 && x <= 200) || (y >= 100 && y <= 200);
+
+            // Act
+            BasicAlgo_0014.Main(new string[] { });
+            var actualResult = BasicAlgo_0014.RangeChecker(x, y);
+
+            // Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
     }
 }
