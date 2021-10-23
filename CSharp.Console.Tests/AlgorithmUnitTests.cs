@@ -390,5 +390,30 @@ namespace CSharp.Console.Tests
             // Assert
             Assert.AreEqual(expectedResult, actualResult);
         }
+
+        [Test]
+        [TestCase("Python")]
+        [TestCase("ytsda")]
+        [TestCase("Don")]
+        public void BasicAlgo_0017_CharactersRemover(string request)
+        {
+            //Arrange
+            string expectedResult;
+            if (request.Substring(1, 2) == "yt")
+            {
+                expectedResult = request.Remove(1, 2);
+            }
+            else
+            {
+                expectedResult = request;
+            }
+
+            // Act
+            BasicAlgo_0017.Main(new string[] { });
+            var actualResult = BasicAlgo_0017.CharactersRemover(request, 1, 2);
+
+            // Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
     }
 }
