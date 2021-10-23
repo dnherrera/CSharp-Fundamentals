@@ -411,9 +411,40 @@ namespace CSharp.Console.Tests
             // Act
             BasicAlgo_0017.Main(new string[] { });
             var actualResult = BasicAlgo_0017.CharactersRemover(request, 1, 2);
+            var actualResult2 = BasicAlgo_0017.CharactersRemover2(request);
 
             // Assert
             Assert.AreEqual(expectedResult, actualResult);
+            Assert.AreEqual(expectedResult, actualResult2);
+        }
+
+        [Test]
+        public void BasicAlgo_0018_MaxChecker()
+        {
+            //Arrange
+            var request = new List<int[]>
+            {
+                new int[] { 11, 20, 12 },
+                new int[] { 30, 30, 17 },
+                new int[] { 25, 35, 50 },
+                new int[] { 15, 12, 8 }
+            };
+
+            IEnumerable<int> expectedResult = new List<int>() { 20, 30, 50, 15 };
+
+            // Act
+            BasicAlgo_0018.Main(new string[] { });
+            var actualResult = BasicAlgo_0018.MaxChecker(request);
+            var actualResult2 = new List<int>();
+            foreach (var item in request)
+            {
+                actualResult2.Add(BasicAlgo_0018.MaxChecker(item[0], item[1], item[2]));
+            }
+
+            // Assert
+            Assert.AreEqual(expectedResult, actualResult);
+            Assert.AreEqual(expectedResult, actualResult);
+            
         }
     }
 }
