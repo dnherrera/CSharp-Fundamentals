@@ -14,6 +14,7 @@ namespace CSharp.Fundamentals.Algorithms
             foreach (var item in testData)
             {
                 Console.WriteLine(CharactersRemover(item, 1, 2));
+                Console.WriteLine(CharactersRemover2(item));
             }
         }
 
@@ -24,6 +25,11 @@ namespace CSharp.Fundamentals.Algorithms
                 return request.Remove(startIndex, charNumToBeDeleted);
             }
             return request;
+        }
+
+        public static string CharactersRemover2(string str)
+        {
+            return str.Substring(1, 2).Equals("yt") ? str.Remove(1, 2) : str;
         }
     }
 }
