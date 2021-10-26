@@ -501,5 +501,30 @@ namespace CSharp.Console.Tests
             // Assert
             Assert.AreEqual(expectedResults, actualResults);
         }
+
+        [Test]
+        public void BasicAlgo_0021_FindLargerValueInTheRange()
+        {
+            //Arrange
+            IDictionary<int, int> testData = new Dictionary<int, int>()
+            {
+                { 78, 95 },
+                { 20, 30 },
+                { 21, 25 },
+                { 28, 28 }
+            };
+
+            IEnumerable<int> expectedResults = new List<int>() { 0, 30, 25, 28 };
+
+            // Act
+            BasicAlgo_0021.Main(new string[] { });
+
+            List<int> actualResults = new List<int>();
+            var res = testData.Select(x => BasicAlgo_0021.FindLargerValueInTheRange(x.Key, x.Value));
+            actualResults.AddRange(res);
+
+            // Assert
+            Assert.AreEqual(expectedResults, actualResults);
+        }
     }
 }
