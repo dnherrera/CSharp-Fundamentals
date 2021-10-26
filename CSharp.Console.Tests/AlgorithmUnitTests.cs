@@ -473,5 +473,33 @@ namespace CSharp.Console.Tests
             // Assert
             Assert.AreEqual(expectedResults, actualResults);
         }
+
+        [Test]
+        public void BasicAlgo_0020_RangeChecker()
+        {
+            //Arrange
+            IDictionary<int, int> testData = new Dictionary<int, int>()
+            {
+                { 78, 95 },
+                { 25, 35 },
+                { 40, 50 },
+                { 55, 60 }
+            };
+
+            IEnumerable<bool> expectedResults = new List<bool>() { false, false, true, true };
+
+            // Act
+            BasicAlgo_0020.Main(new string[] { });
+
+            List<bool> actualResults = new List<bool>();
+            foreach (var item in testData)
+            {
+                var actualResult = BasicAlgo_0020.RangeChecker(item.Key, item.Value);
+                actualResults.Add(actualResult);
+            }
+
+            // Assert
+            Assert.AreEqual(expectedResults, actualResults);
+        }
     }
 }
