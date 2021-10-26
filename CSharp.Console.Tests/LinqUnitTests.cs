@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using CSharp.Fundamentals.LINQ;
 using NUnit.Framework;
@@ -42,6 +43,20 @@ namespace CSharp.Console.Tests
 
             // Assert
             Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        [TestCase(9, 8, 6, 5)]
+        public void Linq_003_FindSquareRoot(params int[] testData)
+        {
+            //Arrange
+          
+            // Act
+            Linq_003.Main(new string[] { });
+            var actualResult = Linq_003.FindTheSquareRoot(testData);
+
+            // Assert
+            Assert.IsNotNull(actualResult);
         }
     }
 }
