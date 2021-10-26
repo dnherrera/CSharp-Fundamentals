@@ -446,5 +446,32 @@ namespace CSharp.Console.Tests
             Assert.AreEqual(expectedResult, actualResult);
             
         }
+
+        [Test]
+        public void BasicAlgo_0019_NearestValueChecker()
+        {
+            //Arrange
+            IDictionary<int, int> testData = new Dictionary<int, int>()
+            {
+                { 95, 75 },
+                { 99, 99 },
+                { 75, 90 }
+            };
+
+            IEnumerable<int> expectedResults = new List<int>() { 95, 0, 90 };
+
+            // Act
+            BasicAlgo_0019.Main(new string[] { });
+
+            List<int> actualResults = new List<int>();
+            foreach (var item in testData)
+            {
+                var actualResult = BasicAlgo_0019.NearestValueChecker(item.Key, item.Value);
+                actualResults.Add(actualResult);
+            }
+
+            // Assert
+            Assert.AreEqual(expectedResults, actualResults);
+        }
     }
 }
