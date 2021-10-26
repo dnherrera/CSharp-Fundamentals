@@ -13,7 +13,7 @@ namespace CSharp.Fundamentals.LINQ
     {
         public static void Main(string[] args)
         {
-            int[] testData = { 1, 3, -2, -4, -7, -3, -8, 12, 19, 6, 9, 10, 14 };
+            int[] testData = { 0, 1, 3, -2, -4, -7, -3, -8, 12, 19, 6, 9, 10, 14 };
 
             var actualResult = GetPositiveValue(testData);
 
@@ -26,7 +26,7 @@ namespace CSharp.Fundamentals.LINQ
 
         public static IEnumerable<int> GetPositiveValue(int[] request)
         {
-            var res = request.Where(x => x >= 1 && x >= 1 && x <= 11);
+            var res = request.Where(x => x > 0 && x >= 1 && x <= 11);
             return res;
         }
     }

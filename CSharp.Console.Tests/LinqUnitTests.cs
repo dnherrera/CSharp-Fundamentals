@@ -30,7 +30,7 @@ namespace CSharp.Console.Tests
         }
 
         [Test]
-        [TestCase(1, 3, -2, -4, -7, -3, -8, 12, 19, 6, 9, 10, 14)]
+        [TestCase(0, 1, 3, -2, -4, -7, -3, -8, 12, 19, 6, 9, 10, 14)]
         public void Linq_002_DisplayPositiveValueInTheRange(params int[] testData)
         {
             //Arrange
