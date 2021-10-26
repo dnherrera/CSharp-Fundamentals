@@ -28,5 +28,20 @@ namespace CSharp.Console.Tests
             Assert.AreEqual(expectedResult, actualResult1);
             Assert.AreEqual(expectedResult, actualResult2);
         }
+
+        [Test]
+        [TestCase(1, 3, -2, -4, -7, -3, -8, 12, 19, 6, 9, 10, 14)]
+        public void Linq_002_DisplayPositiveValueInTheRange(params int[] testData)
+        {
+            //Arrange
+            var expectedResult = new List<int>() { 1, 3, 6, 9, 10 };
+
+            // Act
+            Linq_002.Main(new string[] { });
+            var actualResult = Linq_002.GetPositiveValue(testData);
+
+            // Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
     }
 }
