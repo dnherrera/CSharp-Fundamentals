@@ -526,5 +526,30 @@ namespace CSharp.Console.Tests
             // Assert
             Assert.AreEqual(expectedResults, actualResults);
         }
+
+        [Test]
+        public void BasicAlgo_0022_StringCharacterChecker()
+        {
+            //Arrange
+            var testData = new string[]
+            {
+                "frizz",
+                "zane",
+                "Zazz",
+                "false"
+            };
+
+            IEnumerable<bool> expectedResults = new List<bool>() { true, false, true, false };
+
+            // Act
+            BasicAlgo_0022.Main(new string[] { });
+
+            List<bool> actualResults = new List<bool>();
+            var res = testData.Select(x => BasicAlgo_0022.StringCharacterChecker(x));
+            actualResults.AddRange(res);
+
+            // Assert
+            Assert.AreEqual(expectedResults, actualResults);
+        }
     }
 }
