@@ -551,5 +551,33 @@ namespace CSharp.Console.Tests
             // Assert
             Assert.AreEqual(expectedResults, actualResults);
         }
+
+        [Test]
+        public void BasicAlgo_0023_CheckLastDigit()
+        {
+            //Arrange
+            List<bool> actualResults = new List<bool>();
+            List<bool> actualResults2 = new List<bool>();
+            IDictionary<int, int> testData = new Dictionary<int, int>()
+            {
+                { 78, 95 },
+                { 20, 30 },
+                { 21, 25 },
+                { 28, 28 }
+            };
+
+            IEnumerable<bool> expectedResults = new List<bool>() { false, true, false, true };
+
+            // Act
+            BasicAlgo_0023.Main(new string[] { });
+            var res = testData.Select(x => BasicAlgo_0023.CheckLastDigit(x.Key, x.Value));
+            actualResults.AddRange(res);
+            var res2 = testData.Select(x => BasicAlgo_0023.CheckLastDigitIsEqual(x.Key, x.Value));
+            actualResults2.AddRange(res2);
+
+            // Assert
+            Assert.AreEqual(expectedResults, actualResults);
+            Assert.AreEqual(expectedResults, actualResults2);
+        }
     }
 }
