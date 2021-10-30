@@ -615,5 +615,26 @@ namespace CSharp.Console.Tests
             // Assert
             Assert.AreEqual(expectedResults, actualResults);
         }
+
+        [Test]
+        public void BasicAlgo_0026_ThreeLetterRepeater()
+        {
+            //Arrange
+            var testData = new Dictionary<string, int>()
+            {
+                { "Don", 1 },
+                { "JavaScript", 2 },
+                { "Socks", 3 }
+            };
+
+            var expectedResults = new List<string>() { "Don", "JavJav", "SocSocSoc" };
+
+            // Act
+            BasicAlgo_0026.Main(new string[] { });
+            var actualResults = testData.Select(x => BasicAlgo_0026.ThreeLetterRepeater(x.Key, x.Value));
+
+            // Assert
+            Assert.AreEqual(expectedResults, actualResults);
+        }
     }
 }
