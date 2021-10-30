@@ -594,5 +594,26 @@ namespace CSharp.Console.Tests
             // Assert
             Assert.AreEqual(expectedResults, actualResults);
         }
+
+        [Test]
+        public void BasicAlgo_0025_StringRepeater()
+        {
+            //Arrange
+            var testData = new Dictionary<string, int>()
+            {
+                { "DD", 1 },
+                { "JJ", 2 },
+                { "XX", 3 }
+            };
+
+            var expectedResults = new List<string>() { "DD", "JJJJ", "XXXXXX" };
+
+            // Act
+            BasicAlgo_0025.Main(new string[] { });
+            var actualResults = testData.Select(x => BasicAlgo_0025.StringRepeater(x.Key, x.Value));
+
+            // Assert
+            Assert.AreEqual(expectedResults, actualResults);
+        }
     }
 }
