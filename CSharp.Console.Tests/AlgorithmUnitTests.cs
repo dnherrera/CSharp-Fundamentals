@@ -636,5 +636,21 @@ namespace CSharp.Console.Tests
             // Assert
             Assert.AreEqual(expectedResults, actualResults);
         }
+
+        [Test]
+        public void BasicAlgo_0027_StringCounterr()
+        {
+            //Arrange
+            var testData = new string[] { "Daaadaaa", "Jaa", "Xaaaxxxxxaa" };
+
+            var expectedResults = new List<int>() { 4, 1, 3 };
+
+            // Act
+            BasicAlgo_0027.Main(new string[] { });
+            var actualResults = testData.Select(x => BasicAlgo_0027.StringCounter(x));
+
+            // Assert
+            Assert.AreEqual(expectedResults, actualResults);
+        }
     }
 }
