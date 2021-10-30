@@ -579,5 +579,20 @@ namespace CSharp.Console.Tests
             Assert.AreEqual(expectedResults, actualResults);
             Assert.AreEqual(expectedResults, actualResults2);
         }
+
+        [Test]
+        public void BasicAlgo_0024_ConvertStringToUpper()
+        {
+            //Arrange
+            var testData = new string[] { "Dondon", "dd" };
+            var expectedResults = new string[] { "DonDON", "DD" };
+
+            // Act
+            BasicAlgo_0024.Main(new string[] { });
+            var actualResults = testData.Select(x => BasicAlgo_0024.ConvertStringToUpper(x)).ToArray();
+
+            // Assert
+            Assert.AreEqual(expectedResults, actualResults);
+        }
     }
 }
