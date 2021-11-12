@@ -652,5 +652,21 @@ namespace CSharp.Console.Tests
             // Assert
             Assert.AreEqual(expectedResults, actualResults);
         }
+
+        [Test]
+        public void BasicAlgo_0028_IsStartsWithAFollowedByA()
+        {
+            //Arrange
+            var testData = new string[] { "caabb", "babaaba", "aaaaa" };
+
+            var expectedResults = new List<bool>() { true, false, true };
+
+            // Act
+            BasicAlgo_0028.Main(new string[] { });
+            var actualResults = testData.Select(x => BasicAlgo_0028.IsStartsWithAFollowedByA(x));
+
+            // Assert
+            Assert.AreEqual(expectedResults, actualResults);
+        }
     }
 }
