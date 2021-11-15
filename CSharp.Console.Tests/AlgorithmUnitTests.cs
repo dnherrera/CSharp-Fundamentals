@@ -668,5 +668,21 @@ namespace CSharp.Console.Tests
             // Assert
             Assert.AreEqual(expectedResults, actualResults);
         }
+
+        [Test]
+        public void BasicAlgo_0029_ProduceNewString()
+        {
+            //Arrange
+            var testData = new string[] { "Python", "PHP", "JS" };
+
+            var expectedResults = new List<string>() { "Pto", "PP", "J" };
+
+            // Act
+            BasicAlgo_0029.Main(new string[] { });
+            var actualResults = testData.Select(x => BasicAlgo_0029.ProduceNewString(x));
+
+            // Assert
+            Assert.AreEqual(expectedResults, actualResults);
+        }
     }
 }
