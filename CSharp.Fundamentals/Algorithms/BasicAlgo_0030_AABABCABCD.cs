@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace CSharp.Fundamentals.Algorithms
 {
@@ -43,6 +42,21 @@ namespace CSharp.Fundamentals.Algorithms
             }
 
             return string.Join("", result);
+        }
+
+        /// <summary>
+        /// Tests the specified string.
+        /// </summary>
+        /// <param name="str">The string.</param>
+        /// <returns></returns>
+        public static string test(string str)
+        {
+            var result = string.Empty;
+            for (var i = 0; i < str.Length; i++)
+            {
+                result += str.Substring(0, i + 1);
+            }
+            return result;
         }
     }
 }
