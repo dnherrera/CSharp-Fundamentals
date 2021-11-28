@@ -588,8 +588,8 @@ namespace CSharp.Console.Tests
             var expectedResults = new string[] { "DonDON", "DD" };
 
             // Act
-            Fundamentals.Algorithms.BasicAlgo_0024_ConvertStringToUpper.Main(new string[] { });
-            var actualResults = testData.Select(x => BasicAlgo_0024_ConvertStringToUpper.ConvertStringToUpper(x)).ToArray();
+            BasicAlgo_0024_ConvertToUpper.Main(new string[] { });
+            var actualResults = testData.Select(x => BasicAlgo_0024_ConvertToUpper.ConvertStringToUpper(x)).ToArray();
 
             // Assert
             Assert.AreEqual(expectedResults, actualResults);
@@ -680,6 +680,22 @@ namespace CSharp.Console.Tests
             // Act
             BasicAlgo_0029_Produce_NewString_ByEveryOtherCharacter.Main(new string[] { });
             var actualResults = testData.Select(x => BasicAlgo_0029_Produce_NewString_ByEveryOtherCharacter.ProduceNewString(x));
+
+            // Assert
+            Assert.AreEqual(expectedResults, actualResults);
+        }
+
+        [Test]
+        public void BasicAlgo_0030_AABABCABCDPattern()
+        {
+            //Arrange
+            var testData = new string[] { "a", "abc", "abcd" };
+
+            var expectedResults = new List<string>() { "a", "aababc", "aababcabcd" };
+
+            // Act
+            BasicAlgo_0030_AABABCABCD.Main(new string[] { });
+            var actualResults = testData.Select(x => BasicAlgo_0030_AABABCABCD.ProduceAbcd(x));
 
             // Assert
             Assert.AreEqual(expectedResults, actualResults);
