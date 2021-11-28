@@ -5,7 +5,7 @@ namespace CSharp.Fundamentals.Algorithms
     /// <summary>
     /// Write a C# Sharp program to check whether a given positive number is a multiple of 3 or a multiple of 7.
     /// </summary>
-    public class BasicAlgo_0010
+    public class BasicAlgo_0010_IsMultipleBy3Or7
     {
         public static void Main(string[] args)
         {

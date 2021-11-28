@@ -17,7 +17,7 @@ namespace CSharp.Fundamentals.Algorithms
      25
      28
      */
-    public class BasicAlgo_0021
+    public class BasicAlgo_0021_FindLargerValueInTheRange
     {
         public static void Main(string[] args)
         {

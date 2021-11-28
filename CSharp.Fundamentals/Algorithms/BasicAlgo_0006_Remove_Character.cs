@@ -6,7 +6,7 @@ namespace CSharp.Fundamentals.Algorithms
     /// <summary>
     /// Write a C# Sharp program to remove the character in a given position of a given string. The given position will be in the range 0...string length -1 inclusive.
     /// </summary>
-    public class BasicAlgo_0006
+    public class BasicAlgo_0006_Remove_Character
     {
         public static void Main(string[] args)
         {

@@ -7,7 +7,7 @@ namespace CSharp.Fundamentals.Algorithms
     /// Write a C# Sharp program to check whether two given integer values are in the range 20..50 inclusive. 
     /// Return true if 1 or other is in the said range otherwise false.
     /// </summary>
-    public class BasicAlgo_0016
+    public class BasicAlgo_0016_RangeChecker_20_50_TwoGiven
     {
         public static void Main(string[] args)
         {

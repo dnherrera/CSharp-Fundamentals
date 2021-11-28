@@ -6,7 +6,7 @@ namespace CSharp.Fundamentals.Algorithms
     /// <summary>
     /// Write a C# Sharp program to exchange the first and last characters in a given string and return the new string.
     /// </summary>
-    public class BasicAlgo_0007
+    public class BasicAlgo_0007_Reverse_String
     {
         public static void Main(string[] args)
         {

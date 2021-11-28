@@ -13,7 +13,7 @@ namespace CSharp.Fundamentals.Algorithms
      2
      4
      */
-    public class BasicAlgo_0027
+    public class BasicAlgo_0027_CountRepeatedCharacter
     {
         public static void Main(string[] args)
         {

@@ -68,8 +68,8 @@ namespace CSharp.Console.Tests
             var expectedResultDiffRequest = x + y;
 
             // Act
-            BasicAlgo_0001.Main(new string[] { });
-            var result = BasicAlgo_0001.SumTwoIntegers(x, y);
+            BasicAlgo_0001_Sum_Two_Integers.Main(new string[] { });
+            var result = BasicAlgo_0001_Sum_Two_Integers.SumTwoIntegers(x, y);
 
             // Assert
             if (x == y)
@@ -93,8 +93,8 @@ namespace CSharp.Console.Tests
             var expectedLessThan51 = Math.Abs(x - 51);
 
             // Act
-            BasicAlgo_0002.Main(new string[] { });
-            var result = BasicAlgo_0002.ComputeAbsDifference(x);
+            BasicAlgo_0002_Absolute_Difference.Main(new string[] { });
+            var result = BasicAlgo_0002_Absolute_Difference.ComputeAbsDifference(x);
 
             // Assert
             if (x > 51)
@@ -118,8 +118,8 @@ namespace CSharp.Console.Tests
             var isEqualTo30 = x == 30 || y == 30 || (x + y == 30);
 
             // Act
-            BasicAlgo_0003.Main(new string[] { });
-            var result = BasicAlgo_0003.IsEqualsToThirty(x, y);
+            BasicAlgo_0003_Equals_Condition.Main(new string[] { });
+            var result = BasicAlgo_0003_Equals_Condition.IsEqualsToThirty(x, y);
 
             // Assert
             if (isEqualTo30)
@@ -142,8 +142,8 @@ namespace CSharp.Console.Tests
             var isValueWithin = Math.Abs(x - 100) <= 10 || Math.Abs(x - 200) <= 10;
 
             // Act
-            BasicAlgo_0004.Main(new string[] { });
-            var result = BasicAlgo_0004.CheckWithin100(x);
+            BasicAlgo_0004_Check_Within_100.Main(new string[] { });
+            var result = BasicAlgo_0004_Check_Within_100.CheckWithin100(x);
 
             // Assert
             if (isValueWithin)
@@ -166,8 +166,8 @@ namespace CSharp.Console.Tests
             var expectedResult = request.StartsWith("if") ? request : $"if { request }";
 
             // Act
-            BasicAlgo_0005.Main(new string[] { });
-            var actualResult = BasicAlgo_0005.StringIfChecker(request);
+            BasicAlgo_0005_Contains_If_Checker.Main(new string[] { });
+            var actualResult = BasicAlgo_0005_Contains_If_Checker.StringIfChecker(request);
 
             // Assert
             Assert.AreEqual(expectedResult, actualResult);
@@ -184,8 +184,8 @@ namespace CSharp.Console.Tests
             var expectedResult = requestString.Remove(startIndex, numberOfCharTobeDeleted);
 
             // Act
-            BasicAlgo_0006.Main(new string[] { });
-            var actualResult = BasicAlgo_0006.CharacterRemover(requestString, startIndex);
+            BasicAlgo_0006_Remove_Character.Main(new string[] { });
+            var actualResult = BasicAlgo_0006_Remove_Character.CharacterRemover(requestString, startIndex);
 
             // Assert
             Assert.AreEqual(expectedResult, actualResult);
@@ -203,9 +203,9 @@ namespace CSharp.Console.Tests
             var expectedResult = String.Join("", convertedToChar.Select(x => x.ToString()).ToArray());
 
             // Act
-            BasicAlgo_0007.Main(new string[] { });
-            var actualResult = BasicAlgo_0007.ReverseString(requestString);
-            var actualResult2 = BasicAlgo_0007.ReverseStringSecondMethod(requestString);
+            BasicAlgo_0007_Reverse_String.Main(new string[] { });
+            var actualResult = BasicAlgo_0007_Reverse_String.ReverseString(requestString);
+            var actualResult2 = BasicAlgo_0007_Reverse_String.ReverseStringSecondMethod(requestString);
 
             // Assert
             Assert.AreEqual(convertedToChar, actualResult);
@@ -223,8 +223,8 @@ namespace CSharp.Console.Tests
             var expectedResult = requestString.Length < 2 ? requestString : requestString.Substring(0, 2) + requestString.Substring(0, 2) + requestString.Substring(0, 2) + requestString.Substring(0, 2);
 
             // Act
-            BasicAlgo_0008.Main(new string[] { });
-            var actualResult = BasicAlgo_0008.CreateFourCopies(requestString);
+            BasicAlgo_0008_Create_Four_Copies.Main(new string[] { });
+            var actualResult = BasicAlgo_0008_Create_Four_Copies.CreateFourCopies(requestString);
 
             // Assert
             Assert.AreEqual(expectedResult, actualResult);
@@ -241,8 +241,8 @@ namespace CSharp.Console.Tests
             var expectedResult = $"{lastChar}{request}{lastChar}";
 
             // Act
-            BasicAlgo_0009.Main(new string[] { });
-            var actualResult = BasicAlgo_0009.AddLastCharToFirstAndLast(request);
+            BasicAlgo_0009_Add_LastCharTo_FirstAndLast.Main(new string[] { });
+            var actualResult = BasicAlgo_0009_Add_LastCharTo_FirstAndLast.AddLastCharToFirstAndLast(request);
 
             // Assert
             Assert.AreEqual(expectedResult, actualResult);
@@ -259,8 +259,8 @@ namespace CSharp.Console.Tests
             var expectedResult = request % 3 == 0 || request % 7 == 0;
 
             // Act
-            BasicAlgo_0010.Main(new string[] { });
-            var actualResult = BasicAlgo_0010.IsMultipleByThreeOrSeven(request);
+            BasicAlgo_0010_IsMultipleBy3Or7.Main(new string[] { });
+            var actualResult = BasicAlgo_0010_IsMultipleBy3Or7.IsMultipleByThreeOrSeven(request);
 
             // Assert
             if (expectedResult)
@@ -283,8 +283,8 @@ namespace CSharp.Console.Tests
             var expectedResult = request.Length < 3 ? $"{request}{request}{request}" : $"{request.Substring(0, 3)}{request}{request.Substring(0, 3)}"; ;
 
             // Act
-            BasicAlgo_0011.Main(new string[] { });
-            var actualResult = BasicAlgo_0011.AddFirstThreeCharacterToFrontAndBack(request);
+            BasicAlgo_0011_AddFirstThreeCharacter_To_FrontAndBack.Main(new string[] { });
+            var actualResult = BasicAlgo_0011_AddFirstThreeCharacter_To_FrontAndBack.AddFirstThreeCharacterToFrontAndBack(request);
 
             // Assert
             Assert.AreEqual(expectedResult, actualResult);
@@ -300,9 +300,9 @@ namespace CSharp.Console.Tests
             var expectedResult = request.StartsWith("C#");
 
             // Act
-            BasicAlgo_0012.Main(new string[] { });
-            var actualResult = BasicAlgo_0012.IsStartsWithCSharp(request);
-            var actualResult2 = BasicAlgo_0012.IsStartsWithCSharp2(request);
+            Fundamentals.Algorithms.BasicAlgo_0012_IsStartsWithCSharp.Main(new string[] { });
+            var actualResult = Fundamentals.Algorithms.BasicAlgo_0012_IsStartsWithCSharp.IsStartsWithCSharp(request);
+            var actualResult2 = Fundamentals.Algorithms.BasicAlgo_0012_IsStartsWithCSharp.IsStartsWithCSharp2(request);
 
             // Assert
             if (expectedResult)
@@ -327,8 +327,8 @@ namespace CSharp.Console.Tests
             var expectedResult = (x < 0 || x > 100) && (y < 0 || y > 100);
 
             // Act
-            BasicAlgo_0013.Main(new string[] { });
-            var actualResult = BasicAlgo_0013.IsLessThanZeroAndGreaterThanHundred(x, y);
+            BasicAlgo_0013_IsLessThanZeroAndGreaterThanHundred.Main(new string[] { });
+            var actualResult = BasicAlgo_0013_IsLessThanZeroAndGreaterThanHundred.IsLessThanZeroAndGreaterThanHundred(x, y);
 
             // Assert
             Assert.AreEqual(expectedResult, actualResult);
@@ -344,8 +344,8 @@ namespace CSharp.Console.Tests
             var expectedResult = (x >= 100 && x <= 200) || (y >= 100 && y <= 200);
 
             // Act
-            BasicAlgo_0014.Main(new string[] { });
-            var actualResult = BasicAlgo_0014.RangeChecker(x, y);
+            BasicAlgo_0014_RangeChecker_100_200_Inclusive.Main(new string[] { });
+            var actualResult = BasicAlgo_0014_RangeChecker_100_200_Inclusive.RangeChecker(x, y);
 
             // Assert
             Assert.AreEqual(expectedResult, actualResult);
@@ -366,8 +366,8 @@ namespace CSharp.Console.Tests
             IEnumerable<bool> expectedResult = new List<bool>() { true, true, true, false };
 
             // Act
-            BasicAlgo_0015.Main(new string[] { });
-            var actualResult = BasicAlgo_0015.RangeChecker(request);
+            BasicAlgo_0015_RangeChecker_20_50_ThreeGiven.Main(new string[] { });
+            var actualResult = BasicAlgo_0015_RangeChecker_20_50_ThreeGiven.RangeChecker(request);
 
             // Assert
             Assert.AreEqual(expectedResult, actualResult);
@@ -384,8 +384,8 @@ namespace CSharp.Console.Tests
             var expectedResult = (x >= 20 && x <= 50) && (y >= 20 && y <= 50) ? false : true;
 
             // Act
-            BasicAlgo_0016.Main(new string[] { });
-            var actualResult = BasicAlgo_0016.RangeChecker(x, y);
+            BasicAlgo_0016_RangeChecker_20_50_TwoGiven.Main(new string[] { });
+            var actualResult = BasicAlgo_0016_RangeChecker_20_50_TwoGiven.RangeChecker(x, y);
 
             // Assert
             Assert.AreEqual(expectedResult, actualResult);
@@ -409,9 +409,9 @@ namespace CSharp.Console.Tests
             }
 
             // Act
-            BasicAlgo_0017.Main(new string[] { });
-            var actualResult = BasicAlgo_0017.CharactersRemover(request, 1, 2);
-            var actualResult2 = BasicAlgo_0017.CharactersRemover2(request);
+            BasicAlgo_0017_Remove_Substring.Main(new string[] { });
+            var actualResult = BasicAlgo_0017_Remove_Substring.CharactersRemover(request, 1, 2);
+            var actualResult2 = BasicAlgo_0017_Remove_Substring.CharactersRemover2(request);
 
             // Assert
             Assert.AreEqual(expectedResult, actualResult);
@@ -433,12 +433,12 @@ namespace CSharp.Console.Tests
             IEnumerable<int> expectedResult = new List<int>() { 20, 30, 50, 15 };
 
             // Act
-            BasicAlgo_0018.Main(new string[] { });
-            var actualResult = BasicAlgo_0018.MaxChecker(request);
+            Fundamentals.Algorithms.BasicAlgo_0018_MaxChecker.Main(new string[] { });
+            var actualResult = Fundamentals.Algorithms.BasicAlgo_0018_MaxChecker.MaxChecker(request);
             var actualResult2 = new List<int>();
             foreach (var item in request)
             {
-                actualResult2.Add(BasicAlgo_0018.MaxChecker(item[0], item[1], item[2]));
+                actualResult2.Add(Fundamentals.Algorithms.BasicAlgo_0018_MaxChecker.MaxChecker(item[0], item[1], item[2]));
             }
 
             // Assert
@@ -461,12 +461,12 @@ namespace CSharp.Console.Tests
             IEnumerable<int> expectedResults = new List<int>() { 95, 0, 90 };
 
             // Act
-            BasicAlgo_0019.Main(new string[] { });
+            BasicAlgo_0019_NearestValue_Checker.Main(new string[] { });
 
             List<int> actualResults = new List<int>();
             foreach (var item in testData)
             {
-                var actualResult = BasicAlgo_0019.NearestValueChecker(item.Key, item.Value);
+                var actualResult = BasicAlgo_0019_NearestValue_Checker.NearestValueChecker(item.Key, item.Value);
                 actualResults.Add(actualResult);
             }
 
@@ -489,12 +489,12 @@ namespace CSharp.Console.Tests
             IEnumerable<bool> expectedResults = new List<bool>() { false, false, true, true };
 
             // Act
-            BasicAlgo_0020.Main(new string[] { });
+            BasicAlgo_0020_Range_Checker_40_50_50_60.Main(new string[] { });
 
             List<bool> actualResults = new List<bool>();
             foreach (var item in testData)
             {
-                var actualResult = BasicAlgo_0020.RangeChecker(item.Key, item.Value);
+                var actualResult = BasicAlgo_0020_Range_Checker_40_50_50_60.RangeChecker(item.Key, item.Value);
                 actualResults.Add(actualResult);
             }
 
@@ -517,10 +517,10 @@ namespace CSharp.Console.Tests
             IEnumerable<int> expectedResults = new List<int>() { 0, 30, 25, 28 };
 
             // Act
-            BasicAlgo_0021.Main(new string[] { });
+            Fundamentals.Algorithms.BasicAlgo_0021_FindLargerValueInTheRange.Main(new string[] { });
 
             List<int> actualResults = new List<int>();
-            var res = testData.Select(x => BasicAlgo_0021.FindLargerValueInTheRange(x.Key, x.Value));
+            var res = testData.Select(x => Fundamentals.Algorithms.BasicAlgo_0021_FindLargerValueInTheRange.FindLargerValueInTheRange(x.Key, x.Value));
             actualResults.AddRange(res);
 
             // Assert
@@ -542,10 +542,10 @@ namespace CSharp.Console.Tests
             IEnumerable<bool> expectedResults = new List<bool>() { true, false, true, false };
 
             // Act
-            BasicAlgo_0022.Main(new string[] { });
+            Fundamentals.Algorithms.BasicAlgo_0022_StringCharacterChecker.Main(new string[] { });
 
             List<bool> actualResults = new List<bool>();
-            var res = testData.Select(x => BasicAlgo_0022.StringCharacterChecker(x));
+            var res = testData.Select(x => Fundamentals.Algorithms.BasicAlgo_0022_StringCharacterChecker.StringCharacterChecker(x));
             actualResults.AddRange(res);
 
             // Assert
@@ -569,10 +569,10 @@ namespace CSharp.Console.Tests
             IEnumerable<bool> expectedResults = new List<bool>() { false, true, false, true };
 
             // Act
-            BasicAlgo_0023.Main(new string[] { });
-            var res = testData.Select(x => BasicAlgo_0023.CheckLastDigit(x.Key, x.Value));
+            BasicAlgo_0023_CheckLastDigit_Equal.Main(new string[] { });
+            var res = testData.Select(x => BasicAlgo_0023_CheckLastDigit_Equal.CheckLastDigit(x.Key, x.Value));
             actualResults.AddRange(res);
-            var res2 = testData.Select(x => BasicAlgo_0023.CheckLastDigitIsEqual(x.Key, x.Value));
+            var res2 = testData.Select(x => BasicAlgo_0023_CheckLastDigit_Equal.CheckLastDigitIsEqual(x.Key, x.Value));
             actualResults2.AddRange(res2);
 
             // Assert
@@ -588,8 +588,8 @@ namespace CSharp.Console.Tests
             var expectedResults = new string[] { "DonDON", "DD" };
 
             // Act
-            BasicAlgo_0024.Main(new string[] { });
-            var actualResults = testData.Select(x => BasicAlgo_0024.ConvertStringToUpper(x)).ToArray();
+            Fundamentals.Algorithms.BasicAlgo_0024_ConvertStringToUpper.Main(new string[] { });
+            var actualResults = testData.Select(x => BasicAlgo_0024_ConvertStringToUpper.ConvertStringToUpper(x)).ToArray();
 
             // Assert
             Assert.AreEqual(expectedResults, actualResults);
@@ -609,8 +609,8 @@ namespace CSharp.Console.Tests
             var expectedResults = new List<string>() { "DD", "JJJJ", "XXXXXX" };
 
             // Act
-            BasicAlgo_0025.Main(new string[] { });
-            var actualResults = testData.Select(x => BasicAlgo_0025.StringRepeater(x.Key, x.Value));
+            Fundamentals.Algorithms.BasicAlgo_0025_StringRepeater.Main(new string[] { });
+            var actualResults = testData.Select(x => Fundamentals.Algorithms.BasicAlgo_0025_StringRepeater.StringRepeater(x.Key, x.Value));
 
             // Assert
             Assert.AreEqual(expectedResults, actualResults);
@@ -630,8 +630,8 @@ namespace CSharp.Console.Tests
             var expectedResults = new List<string>() { "Don", "JavJav", "SocSocSoc" };
 
             // Act
-            BasicAlgo_0026.Main(new string[] { });
-            var actualResults = testData.Select(x => BasicAlgo_0026.ThreeLetterRepeater(x.Key, x.Value));
+            Fundamentals.Algorithms.BasicAlgo_0026_ThreeLetterRepeater.Main(new string[] { });
+            var actualResults = testData.Select(x => Fundamentals.Algorithms.BasicAlgo_0026_ThreeLetterRepeater.ThreeLetterRepeater(x.Key, x.Value));
 
             // Assert
             Assert.AreEqual(expectedResults, actualResults);
@@ -646,8 +646,8 @@ namespace CSharp.Console.Tests
             var expectedResults = new List<int>() { 4, 1, 3 };
 
             // Act
-            BasicAlgo_0027.Main(new string[] { });
-            var actualResults = testData.Select(x => BasicAlgo_0027.StringCounter(x));
+            BasicAlgo_0027_CountRepeatedCharacter.Main(new string[] { });
+            var actualResults = testData.Select(x => BasicAlgo_0027_CountRepeatedCharacter.StringCounter(x));
 
             // Assert
             Assert.AreEqual(expectedResults, actualResults);
@@ -662,8 +662,8 @@ namespace CSharp.Console.Tests
             var expectedResults = new List<bool>() { true, false, true };
 
             // Act
-            BasicAlgo_0028.Main(new string[] { });
-            var actualResults = testData.Select(x => BasicAlgo_0028.IsStartsWithAFollowedByA(x));
+            Fundamentals.Algorithms.BasicAlgo_0028_IsStartsWithAFollowedByA.Main(new string[] { });
+            var actualResults = testData.Select(x => Fundamentals.Algorithms.BasicAlgo_0028_IsStartsWithAFollowedByA.IsStartsWithAFollowedByA(x));
 
             // Assert
             Assert.AreEqual(expectedResults, actualResults);
@@ -678,8 +678,8 @@ namespace CSharp.Console.Tests
             var expectedResults = new List<string>() { "Pto", "PP", "J" };
 
             // Act
-            BasicAlgo_0029.Main(new string[] { });
-            var actualResults = testData.Select(x => BasicAlgo_0029.ProduceNewString(x));
+            BasicAlgo_0029_Produce_NewString_ByEveryOtherCharacter.Main(new string[] { });
+            var actualResults = testData.Select(x => BasicAlgo_0029_Produce_NewString_ByEveryOtherCharacter.ProduceNewString(x));
 
             // Assert
             Assert.AreEqual(expectedResults, actualResults);

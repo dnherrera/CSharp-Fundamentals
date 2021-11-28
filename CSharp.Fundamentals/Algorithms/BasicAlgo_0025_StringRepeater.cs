@@ -16,7 +16,7 @@ namespace CSharp.Fundamentals.Algorithms
     JSJSJS
     JS
      */
-    public class BasicAlgo_0025
+    public class BasicAlgo_0025_StringRepeater
     {
         public static void Main(string[] args)
         {

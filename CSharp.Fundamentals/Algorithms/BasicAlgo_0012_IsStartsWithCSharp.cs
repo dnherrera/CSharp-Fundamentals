@@ -5,7 +5,7 @@ namespace CSharp.Fundamentals.Algorithms
     /// <summary>
     /// Write a C# Sharp program to check if a given string starts with 'C#' or not. 
     /// </summary>
-    public class BasicAlgo_0012
+    public class BasicAlgo_0012_IsStartsWithCSharp
     {
         public static void Main(string[] args)
         {

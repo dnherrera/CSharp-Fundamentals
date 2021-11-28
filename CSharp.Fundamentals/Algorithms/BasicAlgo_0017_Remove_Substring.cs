@@ -6,7 +6,7 @@ namespace CSharp.Fundamentals.Algorithms
     /// Write a C# Sharp program to check if a string 'yt' appears at index 1 in a given string. 
     /// If it appears return a string without 'yt' otherwise return the original string
     /// </summary>
-    public class BasicAlgo_0017
+    public class BasicAlgo_0017_Remove_Substring
     {
         public static void Main(string[] args)
         {
