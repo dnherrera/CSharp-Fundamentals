@@ -7,7 +7,7 @@ namespace CSharp.Fundamentals.Algorithms
     /// <summary>
     /// Write a C# Sharp program to check the largest number among three given integers.
     /// </summary>
-    public class BasicAlgo_0018
+    public class BasicAlgo_0018_MaxChecker
     {
         public static void Main(string[] args)
         {

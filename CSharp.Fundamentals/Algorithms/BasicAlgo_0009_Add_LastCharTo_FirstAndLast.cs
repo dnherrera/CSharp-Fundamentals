@@ -6,7 +6,7 @@ namespace CSharp.Fundamentals.Algorithms
     /// Write a C# Sharp program to create a new string with the 
     /// last char added at the front and back of a given string of length 1 or more.
     /// </summary>
-    public class BasicAlgo_0009
+    public class BasicAlgo_0009_Add_LastCharTo_FirstAndLast
     {
         public static void Main(string[] args)
         {

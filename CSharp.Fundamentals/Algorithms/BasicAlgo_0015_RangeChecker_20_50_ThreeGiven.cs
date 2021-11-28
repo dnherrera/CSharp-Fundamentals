@@ -8,7 +8,7 @@ namespace CSharp.Fundamentals.Algorithms
     /// Write a C# Sharp program to check whether three given integer values are in the range 20..50 inclusive. 
     /// Return true if 1 or more of them are in the said range otherwise false
     /// </summary>
-    public class BasicAlgo_0015
+    public class BasicAlgo_0015_RangeChecker_20_50_ThreeGiven
     {
         public static void Main(string[] args)
         {

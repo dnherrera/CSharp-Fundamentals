@@ -6,7 +6,7 @@ namespace CSharp.Fundamentals.Algorithms
     /// <summary>
     /// Write a C# Sharp program to check if one given temperatures is less than 0 and the other is greater than 100.
     /// </summary>
-    public class BasicAlgo_0013
+    public class BasicAlgo_0013_IsLessThanZeroAndGreaterThanHundred
     {
         public static void Main(string[] args)
         {

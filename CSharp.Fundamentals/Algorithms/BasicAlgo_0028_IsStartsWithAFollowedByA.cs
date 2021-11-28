@@ -13,7 +13,7 @@ namespace CSharp.Fundamentals.Algorithms
     /// False
     /// True
     /// </summary>
-    public class BasicAlgo_0028
+    public class BasicAlgo_0028_IsStartsWithAFollowedByA
     {
         public static void Main(string[] args)
         {

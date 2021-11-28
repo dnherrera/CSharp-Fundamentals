@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CSharp.Fundamentals.Algorithms
 {
@@ -16,7 +14,7 @@ namespace CSharp.Fundamentals.Algorithms
     PP
     J
      */
-    public class BasicAlgo_0029
+    public class BasicAlgo_0029_Produce_NewString_ByEveryOtherCharacter
     {
         public static void Main(string[] args)
         {

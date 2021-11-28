@@ -6,7 +6,7 @@ namespace CSharp.Fundamentals.Algorithms
     /// Write a C# Sharp program to create a new string which is 4 copies of the 2 front characters of a given string. 
     /// If the given string length is less than 2 return the original string.
     /// </summary>
-    public class BasicAlgo_0008
+    public class BasicAlgo_0008_Create_Four_Copies
     {
         public static void Main(string[] args)
         {

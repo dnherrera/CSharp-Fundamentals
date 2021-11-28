@@ -17,7 +17,7 @@ namespace CSharp.Fundamentals.Algorithms
     True
     True
     */
-    public class BasicAlgo_0020
+    public class BasicAlgo_0020_Range_Checker_40_50_50_60
     {
         public static void Main(string[] args)
         {

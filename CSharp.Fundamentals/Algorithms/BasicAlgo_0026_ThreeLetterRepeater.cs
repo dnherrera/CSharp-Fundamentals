@@ -16,7 +16,7 @@ namespace CSharp.Fundamentals.Algorithms
     PytPytPyt
     JSJSJS
      */
-    public class BasicAlgo_0026
+    public class BasicAlgo_0026_ThreeLetterRepeater
     {
         public static void Main(string[] args)
         {

@@ -6,7 +6,7 @@ namespace CSharp.Fundamentals.Algorithms
     /// <summary>
     /// Write a C# Sharp program to check two given integers whether either of them is in the range 100..200 inclusive.
     /// </summary>
-    public class BasicAlgo_0014
+    public class BasicAlgo_0014_RangeChecker_100_200_Inclusive
     {
         public static void Main(string[] args)
         {

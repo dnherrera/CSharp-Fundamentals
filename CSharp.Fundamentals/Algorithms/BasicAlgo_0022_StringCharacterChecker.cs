@@ -16,7 +16,7 @@ namespace CSharp.Fundamentals.Algorithms
      True
      False
      */
-    public class BasicAlgo_0022
+    public class BasicAlgo_0022_StringCharacterChecker
     {
         public static void Main(string[] args)
         {

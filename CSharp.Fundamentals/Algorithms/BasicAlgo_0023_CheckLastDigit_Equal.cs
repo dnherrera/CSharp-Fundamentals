@@ -16,7 +16,7 @@ namespace CSharp.Fundamentals.Algorithms
      True
      False
      */
-    public class BasicAlgo_0023
+    public class BasicAlgo_0023_CheckLastDigit_Equal
     {
         public static void Main(string[] args)
         {

@@ -15,7 +15,7 @@ namespace CSharp.Fundamentals.Algorithms
     /// 0
     /// 99
     /// </summary>
-    public class BasicAlgo_0019
+    public class BasicAlgo_0019_NearestValue_Checker
     {
         public static void Main(string[] args)
         {

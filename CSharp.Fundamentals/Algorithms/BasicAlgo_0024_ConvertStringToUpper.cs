@@ -18,7 +18,7 @@ namespace CSharp.Fundamentals.Algorithms
     PHP
     */
     /// </summary>
-    public class BasicAlgo_0024
+    public class BasicAlgo_0024_ConvertStringToUpper
     {
         public static void Main(string[] args)
         {
