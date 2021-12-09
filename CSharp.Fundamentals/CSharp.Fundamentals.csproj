@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>CSharp.Fundamentals.Algorithms.BasicAlgo_0032_ArrayOfIntegers</StartupObject>
+    <StartupObject>CSharp.Fundamentals.Algorithms.BasicAlgo_0033_ArrayRangeIntegers</StartupObject>
   </PropertyGroup>
 
 </Project>
