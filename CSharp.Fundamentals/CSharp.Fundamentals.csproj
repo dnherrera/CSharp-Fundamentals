@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>CSharp.Fundamentals.Algorithms.BasicAlgo_0040_SumAndRange</StartupObject>
+    <StartupObject>CSharp.Fundamentals.Algorithms.BasicAlgo_0041_SumAndBooleanCondition</StartupObject>
   </PropertyGroup>
 
 </Project>
