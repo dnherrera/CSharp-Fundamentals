@@ -18,7 +18,7 @@ namespace CSharp.Fundamentals.Basics
             students.ForEach(x => { Console.WriteLine(x.StudentName + " " + x.Gender); });
 
             // Displaying data using LINQ
-            Console.WriteLine(string.Join(", ", students.Select(s => s.StudentName.ToString())));
+            Console.WriteLine(string.Join(", ", students.Select(s => s.StudentName)));
 
 
             List<int> testData = new List<int>() { 1,2,3,4,5,6,7,8,9,10 };
