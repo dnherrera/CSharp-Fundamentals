@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>CSharp.Fundamentals.Basics.Tuples</StartupObject>
+    <StartupObject>CSharp.Fundamentals.Basics.Yield</StartupObject>
   </PropertyGroup>
 
 </Project>
