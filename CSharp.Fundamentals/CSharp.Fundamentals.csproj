@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>CSharp.Fundamentals.Basics.Yield</StartupObject>
+    <StartupObject>CSharp.Fundamentals.Algorithms.BasicAlgo_0043_MultipleBy3And7ButNotBoth</StartupObject>
   </PropertyGroup>
 
 </Project>
