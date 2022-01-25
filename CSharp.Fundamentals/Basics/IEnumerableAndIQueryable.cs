@@ -54,17 +54,16 @@ namespace CSharp.Fundamentals.Basics
             var uniqueItem = items.Distinct();
             return "Unique items : " + string.Join(", ", uniqueItem);
         }
-    }
 
-    public class Student
-    {
-        public int StudentId { get; set; }
-        public string StudentName { get; set; }
-        public string Gender { get; set; }
-
-        public static List<Student> GetStudents()
+        public class Student
         {
-            return new List<Student>()
+            public int StudentId { get; set; }
+            public string StudentName { get; set; }
+            public string Gender { get; set; }
+
+            public static List<Student> GetStudents()
+            {
+                return new List<Student>()
             {
                 new Student()
                 {
@@ -79,13 +78,16 @@ namespace CSharp.Fundamentals.Basics
                     Gender = Genders.Female.ToString()
                 }
             };
+            }
+        }
+
+        public enum Genders
+        {
+            Male = 0,
+            Female = 1,
+            Others
         }
     }
 
-    public enum Genders
-    {
-        Male = 0,
-        Female = 1,
-        Others
-    }
+  
 }

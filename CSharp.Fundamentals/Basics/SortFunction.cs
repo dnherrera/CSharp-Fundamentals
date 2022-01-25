@@ -8,10 +8,10 @@ namespace CSharp.Fundamentals.Basics
     {
         static void Main(string[] args)
         {
-            var testData = new List<dynamic[]>
+            var testData = new List<object[]>
             {
-                new dynamic[]{"aa", "ccc", "bb"}
-                //new dynamic[]{1, "ccc", "bb"}, need to implement this
+                new object[]{"aa", "ccc", "bb"},
+                new object[]{2, "ccc", "bb"},
             };
 
             foreach (var item in testData)
@@ -20,10 +20,12 @@ namespace CSharp.Fundamentals.Basics
             }
         }
 
-        static dynamic[] SortFunctions(dynamic[] args)
+        static object[] SortFunctions(object[] args)
         {
-            var test = args.OrderBy(x => x.Length).ToArray();
-            return test;
+            var arrString = args.Select(x => x.ToString()).ToArray();
+            var sorted = arrString.OrderBy(x => x.Length).ToArray();
+
+            return sorted;
         }
     }
 }
