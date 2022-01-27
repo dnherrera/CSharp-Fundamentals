@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>CSharp.Fundamentals.Basics.SortFunction</StartupObject>
+    <StartupObject>CSharp.Fundamentals.Basics.Test_A</StartupObject>
   </PropertyGroup>
 
 </Project>
