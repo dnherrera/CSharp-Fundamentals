@@ -22,7 +22,7 @@ namespace CSharp.Fundamentals.Advanced
         }
 
         /// <summary>
-        /// Replaces the function.
+        /// Replaces function.
         /// </summary>
         /// <param name="textChunk">The text chunk.</param>
         /// <param name="textToSearches">The text to searches.</param>
