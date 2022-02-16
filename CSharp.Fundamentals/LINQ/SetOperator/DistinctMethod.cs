@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace CSharp.Fundamentals.LINQ.SetOperator
 {
-    public class DistinctOperator
+    public class DistinctMethod
     {
         static void Main(string[] args)
         {

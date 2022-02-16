@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>CSharp.Fundamentals.Basics.TryCatch</StartupObject>
+    <StartupObject>CSharp.Fundamentals.LINQ.SetOperator.ExceptMethod</StartupObject>
   </PropertyGroup>
 
 </Project>
