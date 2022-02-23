@@ -15,16 +15,16 @@ namespace CSharp.Fundamentals.LINQ
                 "Cancelled"
             };
 
-            var statusToCheck = "Pending";
+            var statusToCheck = "Success";
             var isExists = statuses.Select(x => x.ToLower()).Contains(statusToCheck.ToLower());
 
-            if (isExists)
+            if (!isExists)
             {
-                Console.WriteLine($"Status {statusToCheck} is in the list.");
+                Console.WriteLine($"Status {statusToCheck} is not the list. Ignore");
             }
             else
             {
-                Console.WriteLine($"Status {statusToCheck} is not the list.");
+                Console.WriteLine($"Status {statusToCheck} is in the list. Not Ignore");
             }
         }
     }
