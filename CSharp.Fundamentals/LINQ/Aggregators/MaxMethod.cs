@@ -1,4 +1,4 @@
-﻿Mausing System;
+﻿using System;
 using System.Linq;
 
 namespace CSharp.Fundamentals.LINQ.Aggregators
