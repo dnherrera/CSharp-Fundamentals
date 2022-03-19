@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Linq;
+using CSharp.Fundamentals.LINQ.Models;
 
-namespace CSharp.Fundamentals.LINQ.Joins
+namespace CSharp.Fundamentals.LINQ.JoinOperators
 {
     class MultipleJoins
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace CSharp.Fundamentals.LINQ.SelectOperator
+namespace CSharp.Fundamentals.LINQ.Models
 {
     public class EmployeeModel
     {

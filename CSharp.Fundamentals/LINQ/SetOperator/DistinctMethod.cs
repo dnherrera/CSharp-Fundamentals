@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using CSharp.Fundamentals.LINQ.Models;
 
 namespace CSharp.Fundamentals.LINQ.SetOperator
 {
@@ -11,11 +12,11 @@ namespace CSharp.Fundamentals.LINQ.SetOperator
             StudentComparer studentComparer = new StudentComparer();
 
             //Using Method Syntax
-            var MS = Student.GetStudents()
+            var MS = StudentModel.GetStudentsDistinct()
                     .Distinct(studentComparer).ToList();
 
             //Using Query Syntax
-            var QS = (from std in Student.GetStudents()
+            var QS = (from std in StudentModel.GetStudentsDistinct()
                       select std)
                       .Distinct(studentComparer).ToList();
             foreach (var item in QS)

@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Linq;
+using CSharp.Fundamentals.LINQ.Models;
 
-namespace CSharp.Fundamentals.LINQ.Aggregators
+namespace CSharp.Fundamentals.LINQ.AggregationOperators
 {
     /// <summary>
     /// This method is used to Performs a custom aggregation operation on the values of a collection.
@@ -45,8 +46,8 @@ namespace CSharp.Fundamentals.LINQ.Aggregators
 
         static void AddEmployeeSalary()
         {
-            int salary = EmpleyadoModel.GetAllEmployees()
-                           .Aggregate<EmpleyadoModel, int>(0,
+            int salary = CustomerModel.GetAllEmployees()
+                           .Aggregate<CustomerModel, int>(0,
                            (TotalSalary, emp) => TotalSalary += emp.Salary);
 
             Console.WriteLine(salary);
@@ -55,7 +56,7 @@ namespace CSharp.Fundamentals.LINQ.Aggregators
 
         static void GetNamesWithEmployeeNameSeed()
         {
-            string commaSeparatedEmployeeNames = EmpleyadoModel.GetAllEmployees().Aggregate<EmpleyadoModel, string>(
+            string commaSeparatedEmployeeNames = CustomerModel.GetAllEmployees().Aggregate<CustomerModel, string>(
                                        "Employee Names : ",  // seed value
                                        (employeeNames, employee) => employeeNames = employeeNames + employee.Name + ", ");
             int LastIndex = commaSeparatedEmployeeNames.LastIndexOf(",");
@@ -66,7 +67,7 @@ namespace CSharp.Fundamentals.LINQ.Aggregators
 
         static void AggregateMethodWithResultSelector()
         {
-            string commaSeparatedEmployeeNames = EmpleyadoModel.GetAllEmployees().Aggregate<EmpleyadoModel, string, string>(
+            string commaSeparatedEmployeeNames = CustomerModel.GetAllEmployees().Aggregate<CustomerModel, string, string>(
                                         "Employee Names : ",  // seed value
                                         (employeeNames, employee) => employeeNames = employeeNames + employee.Name + ",",
                                         employeeNames => employeeNames.Substring(0, employeeNames.Length - 1));

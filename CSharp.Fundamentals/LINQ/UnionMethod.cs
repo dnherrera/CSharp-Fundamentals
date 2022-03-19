@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using CSharp.Fundamentals.LINQ.Models;
 
 namespace CSharp.Fundamentals.LINQ
 {
@@ -11,27 +12,27 @@ namespace CSharp.Fundamentals.LINQ
     {
         static void Main(string[] args)
         {
-            List<Student> StudentCollection1 = new List<Student>()
+            List<StudentModel> StudentModelCollection1 = new List<StudentModel>()
             {
-                new Student {ID = 101, Name = "Preety" },
-                new Student {ID = 102, Name = "Sambit" },
-                new Student {ID = 105, Name = "Hina"},
-                new Student {ID = 106, Name = "Anurag"},
+                new StudentModel {ID = 101, Name = "Preety" },
+                new StudentModel {ID = 102, Name = "Sambit" },
+                new StudentModel {ID = 105, Name = "Hina"},
+                new StudentModel {ID = 106, Name = "Anurag"},
             };
-            List<Student> StudentCollection2 = new List<Student>()
+            List<StudentModel> StudentModelCollection2 = new List<StudentModel>()
             {
-                new Student {ID = 105, Name = "Hina"},
-                new Student {ID = 106, Name = "Anurag"},
-                new Student {ID = 107, Name = "Pranaya"},
-                new Student {ID = 108, Name = "Santosh"},
+                new StudentModel {ID = 105, Name = "Hina"},
+                new StudentModel {ID = 106, Name = "Anurag"},
+                new StudentModel {ID = 107, Name = "Pranaya"},
+                new StudentModel {ID = 108, Name = "Santosh"},
             };
             //Method Syntax
-            var MS = StudentCollection1.Select(x => x.Name)
-                     .Union(StudentCollection2.Select(y => y.Name)).ToList();
+            var MS = StudentModelCollection1.Select(x => x.Name)
+                     .Union(StudentModelCollection2.Select(y => y.Name)).ToList();
             //Query Syntax
-            var QS = (from std in StudentCollection1
+            var QS = (from std in StudentModelCollection1
                       select std.Name)
-                      .Union(StudentCollection2.Select(y => y.Name)).ToList();
+                      .Union(StudentModelCollection2.Select(y => y.Name)).ToList();
             foreach (var name in MS)
             {
                 Console.WriteLine(name);

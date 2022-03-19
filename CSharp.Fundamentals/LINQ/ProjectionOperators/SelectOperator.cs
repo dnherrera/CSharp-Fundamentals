@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using CSharp.Fundamentals.LINQ.Models;
 
-namespace CSharp.Fundamentals.LINQ.SelectOperator
+namespace CSharp.Fundamentals.LINQ.ProjectionOperators
 {
-    class SelectQuery
+    class SelectOperator
     {
         static void Main(string[] args)
         {

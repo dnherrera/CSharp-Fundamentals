@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
+using CSharp.Fundamentals.LINQ.Models;
 
-namespace CSharp.Fundamentals.LINQ.Aggregators
+namespace CSharp.Fundamentals.LINQ.AggregationOperators
 {
     /// <summary>
     /// This method is used to calculate the total(sum) value of the collection.
@@ -12,12 +12,12 @@ namespace CSharp.Fundamentals.LINQ.Aggregators
         static void Main(string[] args)
         {
             //Using Method Syntax
-            var TotalSalaryMS = EmpleyadoModel.GetAllEmployees()
+            var TotalSalaryMS = CustomerModel.GetAllEmployees()
                               .Where(emp => emp.Department == "IT")
                               .Sum(emp => emp.Salary);
             
             //Using Query Syntax
-            var TotalSalaryQS = (from emp in EmpleyadoModel.GetAllEmployees()
+            var TotalSalaryQS = (from emp in CustomerModel.GetAllEmployees()
                                  where emp.Department == "IT"
                                  select emp).Sum(e => e.Salary);
 

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace CSharp.Fundamentals.LINQ.Aggregators
+namespace CSharp.Fundamentals.LINQ.AggregationOperators
 {
     /// <summary>
     /// This method is used to count the number of elements present in the collection.
