@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
+using CSharp.Fundamentals.LINQ.Models;
 
 namespace CSharp.Fundamentals.LINQ.SetOperator
 {
-    public class StudentComparer : IEqualityComparer<Student>
+    public class StudentComparer : IEqualityComparer<StudentModel>
     {
-        public bool Equals(Student x, Student y)
+        public bool Equals(StudentModel x, StudentModel y)
         {
             //First check if both object reference are equal then return true
             if (object.ReferenceEquals(x, y))
@@ -19,7 +20,7 @@ namespace CSharp.Fundamentals.LINQ.SetOperator
             //Comparing all the properties one by one
             return x.ID == y.ID && x.Name == y.Name;
         }
-        public int GetHashCode(Student obj)
+        public int GetHashCode(StudentModel obj)
         {
             //If obj is null then return 0
             if (obj == null)

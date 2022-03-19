@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Linq;
+using CSharp.Fundamentals.LINQ.Models;
 
-namespace CSharp.Fundamentals.LINQ.Joins
+namespace CSharp.Fundamentals.LINQ.JoinOperators
 {
     /// <summary>
     /// An inner join produces a result set in which each element of the first collection appears one time for every matching element in the second collection. 

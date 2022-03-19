@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace CSharp.Fundamentals.LINQ.Joins
+namespace CSharp.Fundamentals.LINQ.Models
 {
     class AddressModel
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using CSharp.Fundamentals.LINQ.SelectOperator;
+using CSharp.Fundamentals.LINQ.Models;
 
 namespace CSharp.Fundamentals.LINQ
 {

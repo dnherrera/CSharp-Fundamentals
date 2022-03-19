@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Linq;
+using CSharp.Fundamentals.LINQ.Models;
 
-namespace CSharp.Fundamentals.LINQ.Aggregators
+namespace CSharp.Fundamentals.LINQ.AggregationOperators
 {
     /// <summary>
     ///  This method is used to find the smallest value in the collection
@@ -11,11 +12,11 @@ namespace CSharp.Fundamentals.LINQ.Aggregators
         static void Main(string[] args)
         {
             //Using Method Syntax
-            var msLowestSalary = EmpleyadoModel.GetAllEmployees()
+            var msLowestSalary = CustomerModel.GetAllEmployees()
                                  .Where(emp => emp.Department == "IT")
                                  .Min(emp => emp.Salary);
             //Using Query Syntax
-            var qsLowestSalary = (from emp in EmpleyadoModel.GetAllEmployees()
+            var qsLowestSalary = (from emp in CustomerModel.GetAllEmployees()
                                   where emp.Department == "IT"
                                   select emp).Min(e => e.Salary);
 
