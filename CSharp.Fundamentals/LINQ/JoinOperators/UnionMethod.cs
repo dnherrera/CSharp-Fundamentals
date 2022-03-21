@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using CSharp.Fundamentals.LINQ.Models;
 
-namespace CSharp.Fundamentals.LINQ
+namespace CSharp.Fundamentals.LINQ.JoinOperators
 {
     /// <summary>
     /// LINQ Union Method in C# is used to combine the multiple data sources into one data source by removing the duplicate elements.

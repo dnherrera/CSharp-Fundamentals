@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace CSharp.Fundamentals.LINQ
+namespace CSharp.Fundamentals.LINQ.QuantifierOperators
 {
     /// <summary>
     /// C# Linq Any Operator is used to check whether at least one of the elements of a data source satisfies a given condition or not. 

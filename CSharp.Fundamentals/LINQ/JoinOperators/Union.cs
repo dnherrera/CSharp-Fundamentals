@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 
-namespace CSharp.Fundamentals.LINQ
+namespace CSharp.Fundamentals.LINQ.JoinOperators
 {
     class Union
     {

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Linq;
-using static CSharp.Fundamentals.LINQ.GroupByMethod;
+using CSharp.Fundamentals.LINQ.Models;
 
-namespace CSharp.Fundamentals.LINQ
+namespace CSharp.Fundamentals.LINQ.GroupingOperators
 {
     /// <summary>
     /// Linq ToLookup Method in C# exactly does the same thing as the GroupBy Operator does in Linq. 
@@ -12,7 +12,7 @@ namespace CSharp.Fundamentals.LINQ
     {
         static void Main(string[] args)
         {
-            var GroupByMS = GroupByMethodUser.GetGroupByUsers().ToLookup(s => s.Gender)
+            var GroupByMS = UserModel.GetGroupByUsers().ToLookup(s => s.Gender)
                             .OrderByDescending(c => c.Key)
                             .Select(std => new
                             {

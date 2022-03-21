@@ -2,7 +2,7 @@
 using System.Linq;
 using CSharp.Fundamentals.LINQ.Models;
 
-namespace CSharp.Fundamentals.LINQ.SetOperator
+namespace CSharp.Fundamentals.LINQ.SetOperators
 {
     public class DistinctMethod
     {

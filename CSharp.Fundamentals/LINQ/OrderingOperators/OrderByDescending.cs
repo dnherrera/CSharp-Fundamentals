@@ -2,33 +2,25 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CSharp.Fundamentals.LINQ
+namespace CSharp.Fundamentals.LINQ.OrderingOperators
 {
-    /// <summary>
-    /// Linq OrderBy method in C# is used to sort the data in ascending order
-    /// </summary>
-    class OrderByMethod
+    class OrderByDescending
     {
         static void Main(string[] args)
         {
             List<string> stringList = new List<string>() { "Preety", "Tiwary", "Agrawal", "Priyanka", "Dewangan",
             "Hina","Kumar","Manoj", "Rout", "James"};
-
             //Using Method Syntax
-            var MS = stringList.OrderBy(name => name);
-
+            var MS = stringList.OrderByDescending(name => name);
             //Using Query Syntax
             var QS = (from name in stringList
-                      orderby name ascending
+                      orderby name descending
                       select name).ToList();
-
             foreach (var item in MS)
             {
                 Console.WriteLine(item + " ");
             }
-
             Console.ReadKey();
         }
-
     }
 }

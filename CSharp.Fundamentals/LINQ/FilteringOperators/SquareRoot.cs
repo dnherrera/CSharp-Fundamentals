@@ -12,7 +12,7 @@ namespace CSharp.Fundamentals.LINQ
       { Number = 6, SqrNo = 36 }
       { Number = 5, SqrNo = 25 }
       */
-    public class Linq_003
+    public class SquareRoot
     {
         public static void Main(string[] args)
         {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CSharp.Fundamentals.LINQ
+namespace CSharp.Fundamentals.LINQ.OrderingOperators
 {
     /// <summary>
     /// ThenBy Method in C# is used to sort the data in ascending order from the second level onwards.

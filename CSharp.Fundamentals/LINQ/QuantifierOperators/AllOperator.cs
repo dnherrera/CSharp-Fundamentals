@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace CSharp.Fundamentals.LINQ
+namespace CSharp.Fundamentals.LINQ.QuantifierOperators
 {
     /// <summary>
     /// Linq All Operator in C# is used to check whether all the elements of a data source satisfy a given condition or not.

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CSharp.Fundamentals.LINQ
+namespace CSharp.Fundamentals.LINQ.ConcatenationOperators
 {
     /// <summary>
     /// Linq Concat Method in C# is used to concatenate two sequences into one sequence

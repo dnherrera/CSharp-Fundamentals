@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using CSharp.Fundamentals.LINQ.Models;
 
-namespace CSharp.Fundamentals.LINQ
+namespace CSharp.Fundamentals.LINQ.QuantifierOperators
 {
     class ContainsMethod
     {

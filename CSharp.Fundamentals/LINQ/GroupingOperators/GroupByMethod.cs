@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using CSharp.Fundamentals.LINQ.Models;
 
-namespace CSharp.Fundamentals.LINQ
+namespace CSharp.Fundamentals.LINQ.GroupingOperators
 {
     /// <summary>
     /// Linq GroupBy in C# belongs to the Grouping Operators category and exactly does the same thing as the Group By clause does in SQL Query. 
@@ -23,10 +24,10 @@ namespace CSharp.Fundamentals.LINQ
         static void GroupByLocation()
         {
             //Using Method Syntax
-            var groupUserByLocation = GroupByMethodUser.GetGroupByUsers().GroupBy(s => s.Location);
+            var groupUserByLocation = UserModel.GetGroupByUsers().GroupBy(s => s.Location);
 
             //Using Query Syntax
-            IEnumerable<IGrouping<string, GroupByMethodUser>> GroupByQS = from std in GroupByMethodUser.GetGroupByUsers()
+            IEnumerable<IGrouping<string, UserModel>> GroupByQS = from std in UserModel.GetGroupByUsers()
                                                                           group std by std.Location;
             //It will iterate through each groups
             foreach (var group in groupUserByLocation)
@@ -49,7 +50,7 @@ namespace CSharp.Fundamentals.LINQ
         static void GroupByGender()
         {
             //Using Method Syntax
-            var groupByMS = GroupByMethodUser.GetGroupByUsers().GroupBy(s => s.Gender)
+            var groupByMS = UserModel.GetGroupByUsers().GroupBy(s => s.Gender)
                             //First sorting the data based on key in Descending Order
                             .OrderByDescending(c => c.Key)
                             .Select(std => new
@@ -60,7 +61,7 @@ namespace CSharp.Fundamentals.LINQ
                             });
 
             //Using Query Syntax
-            var groupByQS = from std in GroupByMethodUser.GetGroupByUsers()
+            var groupByQS = from std in UserModel.GetGroupByUsers()
                             group std by std.Gender into stdGroup
                             orderby stdGroup.Key descending
                             select new
@@ -83,40 +84,6 @@ namespace CSharp.Fundamentals.LINQ
             Console.Read();
         }
 
-        public class GroupByMethodUser
-        {
-            public int ID { get; set; }
-            public string Name { get; set; }
-            public string Gender { get; set; }
-            public string Location { get; set; }
-            public int Age { get; set; }
-
-            public static List<GroupByMethodUser> GetGroupByUsers()
-            {
-                return new List<GroupByMethodUser>()
-            {
-                new GroupByMethodUser { ID = 1001, Name = "Preety", Gender = "Female",
-                                             Location = "CSE", Age = 20 },
-                new GroupByMethodUser { ID = 1002, Name = "Snurag", Gender = "Male",
-                                             Location = "ETC", Age = 21  },
-                new GroupByMethodUser { ID = 1003, Name = "Pranaya", Gender = "Male",
-                                             Location = "CSE", Age = 21  },
-                new GroupByMethodUser { ID = 1004, Name = "Anurag", Gender = "Male",
-                                             Location = "CSE", Age = 20  },
-                new GroupByMethodUser { ID = 1005, Name = "Hina", Gender = "Female",
-                                             Location = "ETC", Age = 20 },
-                new GroupByMethodUser { ID = 1006, Name = "Priyanka", Gender = "Female",
-                                             Location = "CSE", Age = 21 },
-                new GroupByMethodUser { ID = 1007, Name = "santosh", Gender = "Male",
-                                             Location = "CSE", Age = 22  },
-                new GroupByMethodUser { ID = 1008, Name = "Tina", Gender = "Female",
-                                             Location = "CSE", Age = 20  },
-                new GroupByMethodUser { ID = 1009, Name = "Celina", Gender = "Female",
-                                             Location = "ETC", Age = 22 },
-                new GroupByMethodUser { ID = 1010, Name = "Sambit", Gender = "Male",
-                                             Location = "ETC", Age = 21 }
-            };
-            }
-        }
+        
     }
 }

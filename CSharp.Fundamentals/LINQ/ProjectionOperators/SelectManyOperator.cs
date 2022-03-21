@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using CSharp.Fundamentals.LINQ.Models;
 
-namespace CSharp.Fundamentals.LINQ.SelectOperator
+namespace CSharp.Fundamentals.LINQ.ProjectionOperators
 {
     /// <summary>
     /// SelectMany in LINQ is used to project each element of a sequence to an IEnumerable<T> and then flatten the resulting sequences into one sequence
