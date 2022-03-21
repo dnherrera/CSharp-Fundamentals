@@ -2,7 +2,7 @@
 using System.Linq;
 using CSharp.Fundamentals.LINQ.Models;
 
-namespace CSharp.Fundamentals.LINQ
+namespace CSharp.Fundamentals.LINQ.FilteringOperators
 {
     /// <summary>
     /// Filtering is nothing but the process to get only those elements from a data source that satisfied the given condition. 

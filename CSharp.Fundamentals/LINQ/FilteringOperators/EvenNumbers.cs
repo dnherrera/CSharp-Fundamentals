@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CSharp.Fundamentals.LINQ
+namespace CSharp.Fundamentals.LINQ.FilteringOperators
 {
     /*
      Write a program in C# Sharp to shows how the three parts of a query operation execute. Go to the editor
@@ -10,7 +10,7 @@ namespace CSharp.Fundamentals.LINQ
      The numbers which produce the remainder 0 after divided by 2 are :
      0 2 4 6 8
      */
-    public class Linq_001
+    public class EvenNumbers
     {
         public static void Main(string[] args)
         {

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Linq;
-using static CSharp.Fundamentals.LINQ.GroupByMethod;
+using CSharp.Fundamentals.LINQ.Models;
 
-namespace CSharp.Fundamentals.LINQ
+namespace CSharp.Fundamentals.LINQ.GroupingOperators
 {
     /// <summary>
     /// when you are using multiple keys in Group By operator then the data returned is an anonymous type.
@@ -12,7 +12,7 @@ namespace CSharp.Fundamentals.LINQ
         static void Main(string[] args)
         {
             //Using Method Syntax
-            var GroupByMultipleKeysMS = GroupByMethodUser.GetGroupByUsers()
+            var GroupByMultipleKeysMS = UserModel.GetGroupByUsers()
                                         .GroupBy(x => new { x.Location, x.Gender })
                                         .OrderByDescending(g => g.Key.Location).ThenBy(g => g.Key.Gender)
                                         .Select(g => new
@@ -23,7 +23,7 @@ namespace CSharp.Fundamentals.LINQ
                                         });
 
             //Using Query Syntax
-            var GroupByMultipleKeysQS = from student in GroupByMethodUser.GetGroupByUsers()
+            var GroupByMultipleKeysQS = from student in UserModel.GetGroupByUsers()
                                         group student by new
                                         {
                                             student.Location,

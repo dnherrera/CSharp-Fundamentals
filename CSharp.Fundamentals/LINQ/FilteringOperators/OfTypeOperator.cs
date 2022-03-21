@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CSharp.Fundamentals.LINQ
+namespace CSharp.Fundamentals.LINQ.FilteringOperators
 {
     /// <summary>
     /// OfType Operator in LINQ is used to filter specific type data from a data source based on the data type we passed to this operator.

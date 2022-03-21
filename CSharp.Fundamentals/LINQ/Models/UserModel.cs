@@ -8,6 +8,9 @@ namespace CSharp.Fundamentals.LINQ.Models
         public string Name { get; set; }
         public int AddressId { get; set; }
         public int DepartmentId { get; set; }
+        public string Gender { get; set; }
+        public string Location { get; set; }
+        public int Age { get; set; }
         public static List<UserModel> GetAllEmployees()
         {
             return new List<UserModel>()
@@ -25,5 +28,33 @@ namespace CSharp.Fundamentals.LINQ.Models
                 new UserModel { ID = 11, Name = "Ramesh", AddressId = 11, DepartmentId = 30  }
             };
         }
+
+        public static List<UserModel> GetGroupByUsers()
+        {
+            return new List<UserModel>()
+            {
+                new UserModel { ID = 1001, Name = "Preety", Gender = "Female",
+                                             Location = "CSE", Age = 20 },
+                new UserModel { ID = 1002, Name = "Snurag", Gender = "Male",
+                                             Location = "ETC", Age = 21  },
+                new UserModel { ID = 1003, Name = "Pranaya", Gender = "Male",
+                                             Location = "CSE", Age = 21  },
+                new UserModel { ID = 1004, Name = "Anurag", Gender = "Male",
+                                             Location = "CSE", Age = 20  },
+                new UserModel { ID = 1005, Name = "Hina", Gender = "Female",
+                                             Location = "ETC", Age = 20 },
+                new UserModel { ID = 1006, Name = "Priyanka", Gender = "Female",
+                                             Location = "CSE", Age = 21 },
+                new UserModel { ID = 1007, Name = "santosh", Gender = "Male",
+                                             Location = "CSE", Age = 22  },
+                new UserModel { ID = 1008, Name = "Tina", Gender = "Female",
+                                             Location = "CSE", Age = 20  },
+                new UserModel { ID = 1009, Name = "Celina", Gender = "Female",
+                                             Location = "ETC", Age = 22 },
+                new UserModel { ID = 1010, Name = "Sambit", Gender = "Male",
+                                             Location = "ETC", Age = 21 }
+            };
+        }
+
     }
 }

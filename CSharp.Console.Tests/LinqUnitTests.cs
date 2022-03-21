@@ -21,9 +21,9 @@ namespace CSharp.Console.Tests
             var expectedResult = new List<int>() { 0, 2, 4, 6, 8 };
 
             // Act
-            Linq_001.Main(new string[] { });
-            var actualResult1 = Linq_001.GetEvenNumberByLambda(testData);
-            var actualResult2 = Linq_001.GetEvenNumberByMethod(testData);
+            EvenNumbers.Main(new string[] { });
+            var actualResult1 = EvenNumbers.GetEvenNumberByLambda(testData);
+            var actualResult2 = EvenNumbers.GetEvenNumberByMethod(testData);
 
             // Assert
             Assert.AreEqual(expectedResult, actualResult1);
@@ -38,8 +38,8 @@ namespace CSharp.Console.Tests
             var expectedResult = new List<int>() { 1, 3, 6, 9, 10 };
 
             // Act
-            Linq_002.Main(new string[] { });
-            var actualResult = Linq_002.GetPositiveValue(testData);
+            PositiveValue.Main(new string[] { });
+            var actualResult = PositiveValue.GetPositiveValue(testData);
 
             // Assert
             Assert.AreEqual(expectedResult, actualResult);
@@ -52,8 +52,8 @@ namespace CSharp.Console.Tests
             //Arrange
           
             // Act
-            Linq_003.Main(new string[] { });
-            var actualResult = Linq_003.FindTheSquareRoot(testData);
+            SquareRoot.Main(new string[] { });
+            var actualResult = SquareRoot.FindTheSquareRoot(testData);
 
             // Assert
             Assert.IsNotNull(actualResult);

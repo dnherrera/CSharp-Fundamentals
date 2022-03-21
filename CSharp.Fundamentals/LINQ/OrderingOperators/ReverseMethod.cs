@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CSharp.Fundamentals.LINQ
+namespace CSharp.Fundamentals.LINQ.OrderingOperators
 {
     /// <summary>
     /// LINQ Reverse method is used to reverse the data stored in a data source

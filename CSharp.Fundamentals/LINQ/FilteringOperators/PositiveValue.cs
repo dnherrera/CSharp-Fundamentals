@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CSharp.Fundamentals.LINQ
+namespace CSharp.Fundamentals.LINQ.FilteringOperators
 {
     /// <summary>
     /// Write a program in C# Sharp to find the +ve numbers from a list of numbers using two where conditions in LINQ Query
     /// The numbers within the range of 1 to 11 are :
     /// Expected : 1 3 6 9 10
     /// </summary>
-    public class Linq_002
+    public class PositiveValue
     {
         public static void Main(string[] args)
         {
