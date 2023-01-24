@@ -3,7 +3,11 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>CSharp.Fundamentals.LINQ.NotExistsInTheList</StartupObject>
+    <StartupObject>CSharp.Fundamentals.Advanced.ReplaceFunction</StartupObject>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+  </ItemGroup>
 
 </Project>
